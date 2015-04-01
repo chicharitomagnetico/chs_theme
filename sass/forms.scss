@@ -61,9 +61,6 @@ a.button { /* Buttons used by contrib modules like Media */
 **/
 
 #block-islandora-solr-simple {
-  #edit-simple {
-    margin-top: 3.6em;
-  }
   .form-text {
     border: 1px solid #ccc;
     border-radius: 7px 7px 7px 7px;
@@ -72,7 +69,7 @@ a.button { /* Buttons used by contrib modules like Media */
     float: right;
     height: 1.9em;
     padding-left: 0.5em;
-    width: 97%;
+    width: 100%;
   }
   .form-submit {
     background: url("../images/search_btn.png") no-repeat scroll 0 0 transparent;
@@ -81,6 +78,7 @@ a.button { /* Buttons used by contrib modules like Media */
     height: 25px;
     position: relative;
     float: right;
+    clear: right;
     right: 5px;
     top: -28px;
     width: 25px;

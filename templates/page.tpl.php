@@ -122,6 +122,11 @@
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
+      <?php if ($obj_social): ?>
+      <div class="social-share-outer">
+        <?php print($obj_social);?>
+      </div>
+      <?php endif; ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>

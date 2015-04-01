@@ -101,131 +101,24 @@
  *   http://drupal.org/node/223440 and http://drupal.org/node/1089656
  */
 
-
 /**
- * Override or insert variables into the maintenance page template.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("maintenance_page" in this case.)
+ * Implements hook_preprocess_page().
  */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_maintenance_page(&$variables, $hook) {
-  // When a variable is manipulated or added in preprocess_html or
-  // preprocess_page, that same work is probably needed for the maintenance page
-  // as well, so we can just re-use those functions to do that work here.
-  ir7_preprocess_html($variables, $hook);
-  ir7_preprocess_page($variables, $hook);
-}
-// */
-
-/**
- * Override or insert variables into the html templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("html" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_html(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // The body tag's classes are controlled by the $classes_array variable. To
-  // remove a class from $classes_array, use array_diff().
-  //$variables['classes_array'] = array_diff($variables['classes_array'], array('class-to-remove'));
-}
-// */
-
-/**
- * Override or insert variables into the page templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("page" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_page(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-}
-// */
-
-/**
- * Override or insert variables into the node templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("node" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_node(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-
-  // Optionally, run node-type-specific preprocess functions, like
-  // ir7_preprocess_node_page() or ir7_preprocess_node_story().
-  $function = __FUNCTION__ . '_' . $variables['node']->type;
-  if (function_exists($function)) {
-    $function($variables, $hook);
+function gal_theme_preprocess_page(&$variables) {
+  if (module_exists('widgets')) {
+    $current_path  = current_path();
+    $exploded = explode("/", $current_path);
+    if (   (isset($exploded[0]) && isset($exploded[1]))  &&  ($exploded[0] == "islandora" && $exploded[1] == "object")) {
+      $social_block = widgets_block_view('s_socialmedia_share-default');
+      $variables['obj_social'] = drupal_render($social_block);
+    }
   }
 }
-// */
 
 /**
- * Override or insert variables into the comment templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("comment" in this case.)
+ * Implements hook_form_alter().
  */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_comment(&$variables, $hook) {
-  $variables['sample_variable'] = t('Lorem ipsum.');
-}
-// */
-
-/**
- * Override or insert variables into the region templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("region" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_region(&$variables, $hook) {
-  // Don't use Zen's region--sidebar.tpl.php template for sidebars.
-  //if (strpos($variables['region'], 'sidebar_') === 0) {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('region__sidebar'));
-  //}
-}
-// */
-
-/**
- * Override or insert variables into the block templates.
- *
- * @param $variables
- *   An array of variables to pass to the theme template.
- * @param $hook
- *   The name of the template being rendered ("block" in this case.)
- */
-/* -- Delete this line if you want to use this function
-function ir7_preprocess_block(&$variables, $hook) {
-  // Add a count to all the blocks in the region.
-  // $variables['classes_array'][] = 'count-' . $variables['block_id'];
-
-  // By default, Zen will use the block--no-wrapper.tpl.php for the main
-  // content. This optional bit of code undoes that:
-  //if ($variables['block_html_id'] == 'block-system-main') {
-  //  $variables['theme_hook_suggestions'] = array_diff($variables['theme_hook_suggestions'], array('block__no_wrapper'));
-  //}
-}
-// */
-
-function ir7_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
+function gal_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
   $link = array(
     '#markup' => l(t("Advanced Search"), "advanced-search", array('attributes' => array('class' => array('adv_search')))),
   );
@@ -233,8 +126,32 @@ function ir7_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, 
 }
 
 /**
+ * Implements hook_preprocess().
+ */
+function gal_theme_preprocess_islandora_basic_collection(&$variables) {
+  foreach ($variables['associated_objects_array'] as $key => $value) {
+    $variables['associated_objects_array'][$key]['classes'] = array();
+    if (in_array("islandora:collectionCModel", $value['object']->models)) {
+      array_push($variables['associated_objects_array'][$key]['classes'], 'islandora-default-thumb');
+    }
+  }
+}
+
+/**
+ * Implements hook_preprocess().
+ */
+function gal_theme_preprocess_islandora_basic_collection_grid(&$variables) {
+  foreach ($variables['associated_objects_array'] as $key => $value) {
+    $variables['associated_objects_array'][$key]['classes'] = array();
+    if (in_array("islandora:collectionCModel", $value['object']->models)) {
+      array_push($variables['associated_objects_array'][$key]['classes'], 'islandora-default-thumb');
+    }
+  }
+}
+
+/**
  * Implements hook_block_view_MODULE_DELTA_alter().
  */
-function ir7_block_view_islandora_solr_simple_alter(&$data, $block) {
+function gal_theme_block_view_islandora_solr_simple_alter(&$data, $block) {
   drupal_add_js(drupal_get_path('theme', 'ir7') . '/js/clean_simple_search.js');
 }

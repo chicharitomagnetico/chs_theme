@@ -292,7 +292,7 @@
 
 /* @Google Analytics Views */
 /* line 263, ../sass/blocks.scss */
-#block-views-object-visitors-by-month-block, #block-menu-menu-browse-by, #block-views-top-site-searches-block, #block-views-top-facet-searches-block, .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block {
+#block-views-object-visitors-by-month-block, #block-menu-menu-browse-by, #block-views-top-site-searches-block, #block-views-top-facet-searches-block, .block-google-analytics-reports, .block-front-page-browse-collection {
   float: left;
   padding: 15px;
   background: #fff;
@@ -322,7 +322,7 @@
 }
 
 /* line 290, ../sass/blocks.scss */
-#block-views-frontpage-solr-boxes-block {
+.block-front-page-browse-collection {
   float: right;
   width: 59.5%;
 }

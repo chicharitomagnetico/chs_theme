@@ -100,10 +100,10 @@ $zen-auto-include-item-base: false;
     margin: 0 0 1em 0 !important;
     min-height: 0 !important;
   }
-  #block-views-frontpage-solr-boxes-block, #block-menu-menu-browse-by {
+  #block-menu-menu-browse-by, .block-front-page-browse-collection {
     width: 100% !important;
   }
-  #block-menu-menu-footer-menu {
+  #block-menu-menu-footer-menu { 
     display: table-cell;
     float: left; 
   }
@@ -232,7 +232,7 @@ $zen-auto-include-item-base: false;
   #block-views-frontpage-solr-boxes-block-1 {
     width: 95.9% !important;
   }
-  #block-views-frontpage-solr-boxes-block {
+  .block-front-page-browse-collection {
     width: 100% !important;
   }
   #block-menu-menu-browse-by {
@@ -321,7 +321,7 @@ $zen-auto-include-item-base: false;
     }
   }  
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
-  .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block {
+  .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block, .block-front-page-browse-collection {
     width: 29.4%;
   }  
   #block-views-frontpage-solr-boxes-block-1 {
@@ -347,7 +347,7 @@ $zen-auto-include-item-base: false;
 
 @media all and (min-width: 1200px) {
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
-  .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block {
+  .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block, .block-front-page-browse-collection {
     width: 30.2%;
   }  
   #block-views-frontpage-solr-boxes-block-1 {

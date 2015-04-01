@@ -49,7 +49,6 @@ $zen-auto-include-item-base: false;
      by setting a max-width. */
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
   padding: 0 1%;
 }
 
@@ -93,13 +92,26 @@ $zen-auto-include-item-base: false;
   }
 }
 
-@media all and (min-width: 320px) and (max-width: 759px) {
+@media all and (min-width: 0px) and (max-width: 759px) {
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
   .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block-1,
-  #block-views-frontpage-solr-boxes-block, .browse-content {
+  .browse-content {
     width: 90.7% !important;
     margin: 0 0 1em 0 !important;
     min-height: 0 !important;
+  }
+  #block-views-frontpage-solr-boxes-block, #block-menu-menu-browse-by {
+    width: 100% !important;
+  }
+  #block-menu-menu-footer-menu {
+    display: table-cell;
+    float: left; 
+  }
+  #block-widgets-s-socialmedia-share-default {
+    top: auto !important;
+  }
+  #block-menu-menu-footer-sub-menu {
+    display: table-cell;
   }
   .submit-collection, .submit-collection-anon {
     display: none;
@@ -114,24 +126,18 @@ $zen-auto-include-item-base: false;
   .region-sub-header {
     width: 100%;
     float: left !important;
-    margin: 0 !important;
+    margin-top: 10px !important;
     #block-menu-menu-header-menu {
       text-align: center;
       float: none !important;
-      height: auto;
       margin: -12px -3px 0;
     }
   }
-  #logo {
-    margin: 0 0 1.5em 2.5em !important;
-  }
-  #name-and-slogan {
-    display: none;
-  }
+
 
   #block-islandora-solr-simple, .image-block-front, .welcome {
-    width: 93.7%;
-    height: auto !important;
+    width: 100% !important;
+    height: 50px !important;
     float: left !important;
     #edit-simple {
       margin-top: 1.5em !important;
@@ -220,17 +226,23 @@ $zen-auto-include-item-base: false;
 
 @media all and (min-width: 760px) and (max-width: 959px) {
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
-  .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block {
+  .block-google-analytics-reports {
     width: 28.45%;
   }  
   #block-views-frontpage-solr-boxes-block-1 {
     width: 95.9% !important;
   }
+  #block-views-frontpage-solr-boxes-block {
+    width: 100% !important;
+  }
+  #block-menu-menu-browse-by {
+    width: 100% !important;
+  }
   #block-islandora-solr-simple, .image-block-front, .welcome {
-    width: 64%;
+    width: 100% !important;
     float: left !important;
     max-width: 100% !important;
-    height: 100px !important;
+    height: 60px !important;
   }
   .view-frontpage-solr-boxes .views-responsive-grid {
     .views-row {
@@ -261,7 +273,6 @@ $zen-auto-include-item-base: false;
   /*
    * The layout when there is only one sidebar, the left one.
    */
-
   .sidebar-first {
     #content { /* Span 4 columns, starting in 2nd column from left. */
       @include zen-grid-item(4, 2);
@@ -316,7 +327,7 @@ $zen-auto-include-item-base: false;
   #block-views-frontpage-solr-boxes-block-1 {
     width: 96.8% !important;
   }
-  #block-islandora-solr-simple, .image-block-front, .submit-collection, .submit-collection-anon, .welcome {
+  .image-block-front, .submit-collection, .submit-collection-anon, .welcome {
     width: 36%;
   }
   .view-frontpage-solr-boxes .views-responsive-grid {
@@ -328,13 +339,9 @@ $zen-auto-include-item-base: false;
   #block-accordion-rotator-accordion-rotator {
     width: 60.3% !important;
   }
-  #block-menu-menu-header-menu {
-    float: right;
-    line-height: 0.3em !important;
-  }
   .region-sub-header {
     height: 1.5em !important;
-    margin: 0 !important;
+    margin-top: 10px !important;
   }
 }
 
@@ -347,7 +354,7 @@ $zen-auto-include-item-base: false;
     width: 97.5% !important;
   }
   #block-islandora-solr-simple, .image-block-front, .submit-collection, .submit-collection-anon, .welcome {
-    width: 60%;
+    width: 40%;
   }
   .view-frontpage-solr-boxes .views-responsive-grid {
     .views-row {
@@ -358,4 +365,57 @@ $zen-auto-include-item-base: false;
   #block-accordion-rotator-accordion-rotator {
     width: 66.9% !important;
   }
+}
+
+@media all and (max-width: 600px) {
+  #name-and-slogan {
+    text-align: center;
+    width: 100%;
+  }
+  #logo {
+    padding-bottom: 15px !important;
+    width: 100%;
+  }
+  .region-sub-header #block-menu-menu-header-menu {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media all and (max-width: 450px) {
+  #block-menu-menu-header-menu {
+    height: 60px !important;
+    ul {
+      li {
+        margin-left: 0px !important;
+      }
+      li.last{
+        float: left !important;
+        padding-top: 20px !important;
+      }
+    }
+  }
+  
+  .region-sub-header #block-menu-menu-header-menu {
+    margin-left: 0px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .region-sub-header {
+    height: auto !important;
+  }
+}
+
+@media all and (max-width: 960px) {
+   #footer {
+     text-align: center !important;
+     width: 100% !important;
+   }
+   #block-widgets-s-socialmedia-share-default {
+     display: inline-block !important;
+     float: none !important;
+     padding-top: 40px;
+   }
 }

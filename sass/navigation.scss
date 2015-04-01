@@ -70,7 +70,9 @@ li a.active {
 
 .region-sub-header {
   margin: -12px -10px;
-  height: 4.5em;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 0px !important;
 }
 
 /*
@@ -88,27 +90,44 @@ li a.active {
   margin-bottom: 0;
   text-align: right;
   font-size: 85%;
-  line-height: 2.5em;
-  height: 30px;
-  background-image: -ms-linear-gradient(top, #343334 0%, #5a5b5d 100%);
-    @include filter-gradient(#343334, #5a5b5d, vertical); // IE6-9
-    @include background-image(linear-gradient(top,  #343334 0%,#5a5b5d 100%));
+  .menu {
+    width: 95%;
+  }
   ul {
     margin: 1em 0.8em;
-    padding-left: 15px;
+    margin-left: 0px;
+    padding-left: 2.5%;
+    float:left;
     li {
       display: inline-block; 
+      float: left;
       margin: 0 0.8em;
     }
     li.first {
       margin-left: 0;
     }
+    li.last {
+      float:right;
+      margin-right: 0px;
+    }
   }
 }
+.tabs-primary.tabs.primary {
+    width: 100%;
+}
 
-#block-menu-menu-footer-menu {
+#widgets-element-socialmedia_share-default {
+  float: right;
+}
+
+div.widgets-element-horizontal {
+  float: left;
+}
+
+#block-menu-menu-footer-menu, #block-menu-menu-footer-sub-menu{
   font-size: 75%;
   float: left;
+  clear:left;
   ul {
     list-style: none;
     margin: 1em 0;

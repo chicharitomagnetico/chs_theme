@@ -72,73 +72,94 @@ li a.active {
 /* line 71, ../sass/navigation.scss */
 .region-sub-header {
   margin: -12px -10px;
-  height: 4.5em;
+  height: auto;
+  margin-top: 0px;
+  margin-left: 0px !important;
 }
 
 /*
  * Main menu and Secondary menu links and other menu links
  */
-/* line 83, ../sass/navigation.scss */
+/* line 85, ../sass/navigation.scss */
 #secondary-menu {
   float: right;
   /* LTR */
 }
 
-/* line 87, ../sass/navigation.scss */
+/* line 89, ../sass/navigation.scss */
 #block-menu-menu-header-menu {
   margin-bottom: 0;
   text-align: right;
   font-size: 85%;
-  line-height: 2.5em;
-  height: 30px;
-  background-image: -ms-linear-gradient(top, #343334 0%, #5a5b5d 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF343334', endColorstr='#FF5A5B5D');
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #343334), color-stop(100%, #5a5b5d));
-  background-image: -webkit-linear-gradient(top, #343334 0%, #5a5b5d 100%);
-  background-image: -moz-linear-gradient(top, #343334 0%, #5a5b5d 100%);
-  background-image: -o-linear-gradient(top, #343334 0%, #5a5b5d 100%);
-  background-image: linear-gradient(top, #343334 0%, #5a5b5d 100%);
+}
+/* line 93, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu {
+  width: 95%;
 }
 /* line 96, ../sass/navigation.scss */
 #block-menu-menu-header-menu ul {
   margin: 1em 0.8em;
-  padding-left: 15px;
+  margin-left: 0px;
+  padding-left: 2.5%;
+  float: left;
 }
-/* line 99, ../sass/navigation.scss */
+/* line 101, ../sass/navigation.scss */
 #block-menu-menu-header-menu ul li {
   display: inline-block;
+  float: left;
   margin: 0 0.8em;
 }
-/* line 103, ../sass/navigation.scss */
+/* line 106, ../sass/navigation.scss */
 #block-menu-menu-header-menu ul li.first {
   margin-left: 0;
 }
-
 /* line 109, ../sass/navigation.scss */
-#block-menu-menu-footer-menu {
-  font-size: 75%;
+#block-menu-menu-header-menu ul li.last {
+  float: right;
+  margin-right: 0px;
+}
+
+/* line 115, ../sass/navigation.scss */
+.tabs-primary.tabs.primary {
+  width: 100%;
+}
+
+/* line 119, ../sass/navigation.scss */
+#widgets-element-socialmedia_share-default {
+  float: right;
+}
+
+/* line 123, ../sass/navigation.scss */
+div.widgets-element-horizontal {
   float: left;
 }
-/* line 112, ../sass/navigation.scss */
-#block-menu-menu-footer-menu ul {
+
+/* line 127, ../sass/navigation.scss */
+#block-menu-menu-footer-menu, #block-menu-menu-footer-sub-menu {
+  font-size: 75%;
+  float: left;
+  clear: left;
+}
+/* line 131, ../sass/navigation.scss */
+#block-menu-menu-footer-menu ul, #block-menu-menu-footer-sub-menu ul {
   list-style: none;
   margin: 1em 0;
 }
-/* line 115, ../sass/navigation.scss */
-#block-menu-menu-footer-menu ul li {
+/* line 134, ../sass/navigation.scss */
+#block-menu-menu-footer-menu ul li, #block-menu-menu-footer-sub-menu ul li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 118, ../sass/navigation.scss */
-#block-menu-menu-footer-menu ul li a, #block-menu-menu-footer-menu ul li a:visited {
+/* line 137, ../sass/navigation.scss */
+#block-menu-menu-footer-menu ul li a, #block-menu-menu-footer-menu ul li a:visited, #block-menu-menu-footer-sub-menu ul li a, #block-menu-menu-footer-sub-menu ul li a:visited {
   color: #424143;
 }
-/* line 121, ../sass/navigation.scss */
-#block-menu-menu-footer-menu ul li a:hover {
+/* line 140, ../sass/navigation.scss */
+#block-menu-menu-footer-menu ul li a:hover, #block-menu-menu-footer-sub-menu ul li a:hover {
   color: #419845;
 }
 
-/* line 129, ../sass/navigation.scss */
+/* line 148, ../sass/navigation.scss */
 .footer-logo {
   float: left;
 }
@@ -146,7 +167,7 @@ li a.active {
 /*
   *
   */
-/* line 136, ../sass/navigation.scss */
+/* line 155, ../sass/navigation.scss */
 .sidebar {
   box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
   padding: 2em 1.5em;

@@ -154,5 +154,5 @@ function gal_theme_preprocess_islandora_basic_collection_grid(&$variables) {
  * Implements hook_block_view_MODULE_DELTA_alter().
  */
 function gal_theme_block_view_islandora_solr_simple_alter(&$data, $block) {
-  drupal_add_js(drupal_get_path('theme', 'ir7') . '/js/clean_simple_search.js');
+  drupal_add_js(drupal_get_path('theme', 'gal_theme') . '/js/clean_simple_search.js');
 }

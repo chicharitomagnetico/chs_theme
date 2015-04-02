@@ -105,6 +105,7 @@
  * Implements hook_preprocess_page().
  */
 function gal_theme_preprocess_page(&$variables) {
+  $variables['obj_social'] = "";
   if (module_exists('widgets')) {
     $current_path  = current_path();
     $exploded = explode("/", $current_path);

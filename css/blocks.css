@@ -53,20 +53,21 @@
   float: right;
   max-height: 20px;
   top: -35px;
+  position: relative;
 }
 
 /**
  * @Islandora Blocks
  *
 **/
-/* line 57, ../sass/blocks.scss */
+/* line 58, ../sass/blocks.scss */
 #block-islandora-solr-simple {
   float: right;
   width: 40%;
   margin-bottom: 8px;
 }
 
-/* line 63, ../sass/blocks.scss */
+/* line 64, ../sass/blocks.scss */
 .image-block-front,
 .submit-collection-anon, .submit-collection, .welcome {
   background: #fff;
@@ -80,21 +81,21 @@
   -webkit-box-shadow: 0px 0px 5px 1px rgba(38, 37, 38, 0.5);
 }
 
-/* line 76, ../sass/blocks.scss */
+/* line 77, ../sass/blocks.scss */
 .welcome h2 {
   color: #3D8396;
   margin: 0.8em 0;
   font-weight: normal;
   font-size: 120%;
 }
-/* line 82, ../sass/blocks.scss */
+/* line 83, ../sass/blocks.scss */
 .welcome p {
   margin: 0.2em 0;
   line-height: 1.3em;
   color: #424143;
 }
 
-/* line 89, ../sass/blocks.scss */
+/* line 90, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator {
   max-height: 440px;
   width: 99.5%;
@@ -102,7 +103,7 @@
   margin-bottom: 1.4em;
 }
 
-/* line 97, ../sass/blocks.scss */
+/* line 98, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1, #block-views-frontpage-solr-boxes-block-2,
 #block-views-frontpage-solr-boxes-block-3 {
   float: left;
@@ -113,63 +114,63 @@
   -webkit-box-shadow: 0px 0px 5px 1px rgba(38, 37, 38, 0.5);
 }
 
-/* line 105, ../sass/blocks.scss */
+/* line 106, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-2 {
   margin-right: none !important;
 }
 
-/* line 109, ../sass/blocks.scss */
+/* line 110, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1 .views-row {
   float: left;
   max-width: 47%;
   padding: 1em 1em 1em 0;
 }
-/* line 114, ../sass/blocks.scss */
+/* line 115, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1 h3 {
   margin-bottom: 0.5em;
   font-size: 95%;
 }
-/* line 118, ../sass/blocks.scss */
+/* line 119, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1 .views-field-dcdescription span {
   margin-top: 0;
   margin-bottom: 2em;
   font-size: 90%;
   line-height: 1.4em;
 }
-/* line 124, ../sass/blocks.scss */
+/* line 125, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1 img {
   float: left;
   width: 115px;
   height: 115px;
   padding-right: 10px;
 }
-/* line 130, ../sass/blocks.scss */
+/* line 131, ../sass/blocks.scss */
 #block-views-frontpage-solr-boxes-block-1 a {
   color: #3D8396;
   font-size: 100%;
   font-weight: bold;
 }
 
-/* line 138, ../sass/blocks.scss */
+/* line 139, ../sass/blocks.scss */
 #block-views-top-site-searches-block table, #block-views-top-facet-searches-block table {
   width: 100%;
 }
 
-/* line 144, ../sass/blocks.scss */
+/* line 145, ../sass/blocks.scss */
 .block-islandora-solr ul {
   margin: 0.5em 0 0;
   padding: 0 !important;
 }
-/* line 147, ../sass/blocks.scss */
+/* line 148, ../sass/blocks.scss */
 .block-islandora-solr ul li {
   list-style: none;
   border-bottom: 1px solid #eef0ed;
 }
-/* line 151, ../sass/blocks.scss */
+/* line 152, ../sass/blocks.scss */
 .block-islandora-solr ul li:hover {
   background: #F7F9F6;
 }
-/* line 156, ../sass/blocks.scss */
+/* line 157, ../sass/blocks.scss */
 .block-islandora-solr h3 {
   margin-bottom: 0;
   color: #5A5B5D;
@@ -177,29 +178,29 @@
   font-weight: normal;
 }
 
-/* line 164, ../sass/blocks.scss */
+/* line 165, ../sass/blocks.scss */
 .count {
   color: #888;
 }
 
-/* line 168, ../sass/blocks.scss */
+/* line 169, ../sass/blocks.scss */
 .plusminus {
   display: none;
 }
 
-/* line 172, ../sass/blocks.scss */
+/* line 173, ../sass/blocks.scss */
 #block-islandora-solr-display-switch {
   float: right;
   opacity: 0.5;
   filter: alpha(opacity=50);
 }
 
-/* line 180, ../sass/blocks.scss */
+/* line 181, ../sass/blocks.scss */
 #block-islandora-solr-display-switch ul li {
   float: left;
 }
 
-/* line 187, ../sass/blocks.scss */
+/* line 188, ../sass/blocks.scss */
 .islandora-solr-display a.display-default, .islandora-solr-display a.display-grid,
 .islandora-solr-display a.display-table {
   background: url("../images/display-grid-list.png") no-repeat scroll left top transparent;
@@ -210,22 +211,22 @@
   width: 25px;
 }
 
-/* line 196, ../sass/blocks.scss */
+/* line 197, ../sass/blocks.scss */
 .islandora-solr-display a.display-grid {
   background: url("../images/display-grid.png") no-repeat scroll left top transparent;
 }
 
-/* line 200, ../sass/blocks.scss */
+/* line 201, ../sass/blocks.scss */
 .islandora-solr-display a.display-table {
   background: url("../images/display-list.png") no-repeat scroll left top transparent;
 }
 
-/* line 204, ../sass/blocks.scss */
+/* line 205, ../sass/blocks.scss */
 #block-islandora-bookmark-islandora-bookmark {
   clear: left;
 }
 
-/* line 208, ../sass/blocks.scss */
+/* line 209, ../sass/blocks.scss */
 #islandora-bookmark-overview-form table, #islandora-bookmark-detailed-overview table {
   width: 100%;
 }
@@ -234,7 +235,7 @@
   * @Menus 
   *
 **/
-/* line 217, ../sass/blocks.scss */
+/* line 218, ../sass/blocks.scss */
 #block-menu-menu-header-menu {
   float: right;
   line-height: 0.3em !important;
@@ -245,17 +246,17 @@
  * @Views Blocks
  *
 **/
-/* line 228, ../sass/blocks.scss */
+/* line 229, ../sass/blocks.scss */
 #block-aggregator-category-1 {
   /* Block for the latest news items in the first category */
 }
 
-/* line 231, ../sass/blocks.scss */
+/* line 232, ../sass/blocks.scss */
 #block-aggregator-feed-1 {
   /* Block for the latest news items in the first feed */
 }
 
-/* line 234, ../sass/blocks.scss */
+/* line 235, ../sass/blocks.scss */
 .submit-collection, .submit-collection-anon {
   /* First block created with "Add block" link */
   height: 70px;
@@ -266,32 +267,32 @@
   float: right;
   margin-bottom: 0;
 }
-/* line 242, ../sass/blocks.scss */
+/* line 243, ../sass/blocks.scss */
 .submit-collection a, .submit-collection-anon a {
   color: #fff;
   margin-left: 3.2em;
 }
-/* line 246, ../sass/blocks.scss */
+/* line 247, ../sass/blocks.scss */
 .submit-collection p, .submit-collection-anon p {
   margin: 0.25em 0;
 }
 
-/* line 251, ../sass/blocks.scss */
+/* line 252, ../sass/blocks.scss */
 .block-front-page-browse-collection {
   min-height: auto !important;
   height: auto;
 }
-/* line 254, ../sass/blocks.scss */
+/* line 255, ../sass/blocks.scss */
 .block-front-page-browse-collection table {
   width: 100%;
 }
-/* line 256, ../sass/blocks.scss */
+/* line 257, ../sass/blocks.scss */
 .block-front-page-browse-collection table td {
   vertical-align: top;
 }
 
 /* @Google Analytics Views */
-/* line 263, ../sass/blocks.scss */
+/* line 264, ../sass/blocks.scss */
 #block-views-object-visitors-by-month-block, #block-menu-menu-browse-by, #block-views-top-site-searches-block, #block-views-top-facet-searches-block, .block-google-analytics-reports, .block-front-page-browse-collection {
   float: left;
   padding: 15px;
@@ -302,18 +303,18 @@
   box-sizing: border-box;
 }
 
-/* line 273, ../sass/blocks.scss */
+/* line 274, ../sass/blocks.scss */
 #block-menu-menu-browse-by {
   width: 39.5%;
   min-height: auto !important;
 }
-/* line 277, ../sass/blocks.scss */
+/* line 278, ../sass/blocks.scss */
 #block-menu-menu-browse-by li {
   list-style: none;
   padding: 10px;
 }
 
-/* line 283, ../sass/blocks.scss */
+/* line 284, ../sass/blocks.scss */
 #block-widgets-s-socialmedia-share-default {
   float: right;
   position: relative;
@@ -321,51 +322,51 @@
   top: -3.5em;
 }
 
-/* line 290, ../sass/blocks.scss */
+/* line 291, ../sass/blocks.scss */
 .block-front-page-browse-collection {
   float: right;
   width: 59.5%;
 }
 
-/* line 294, ../sass/blocks.scss */
+/* line 295, ../sass/blocks.scss */
 #block-views-top-site-searches-block {
   margin: 0;
   font-size: 90%;
 }
-/* line 298, ../sass/blocks.scss */
+/* line 299, ../sass/blocks.scss */
 #block-views-top-site-searches-block th.views-field-search, #block-views-top-site-searches-block th.views-field-pageviews {
   padding: 0.8em 0;
 }
 
-/* line 303, ../sass/blocks.scss */
+/* line 304, ../sass/blocks.scss */
 #block-views-top-facet-searches-block {
   margin: 0;
   font-size: 90%;
 }
 
-/* line 309, ../sass/blocks.scss */
+/* line 310, ../sass/blocks.scss */
 .block-google-analytics-reports {
   margin: 0 10px;
 }
-/* line 312, ../sass/blocks.scss */
+/* line 313, ../sass/blocks.scss */
 .block-google-analytics-reports h3 {
   font-size: 93%;
   color: #424143;
 }
-/* line 316, ../sass/blocks.scss */
+/* line 317, ../sass/blocks.scss */
 .block-google-analytics-reports ol, .block-google-analytics-reports p {
   font-size: 90%;
 }
 
 /* Accordion Rotator */
-/* line 328, ../sass/blocks.scss */
+/* line 329, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator h2 {
   font-size: 120%;
   padding: 0 15px;
   font-weight: normal;
   margin: 0;
 }
-/* line 334, ../sass/blocks.scss */
+/* line 335, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator p {
   font-size: 80%;
   padding: 0 15px;
@@ -373,142 +374,142 @@
   margin: 0;
   font-weight: normal;
 }
-/* line 341, ../sass/blocks.scss */
+/* line 342, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator .acc_content {
   background: none;
 }
-/* line 344, ../sass/blocks.scss */
+/* line 345, ../sass/blocks.scss */
 #block-accordion-rotator-accordion-rotator .box {
   height: 75px;
   padding-top: 15px;
 }
 
 /* Blockify */
-/* line 355, ../sass/blocks.scss */
+/* line 356, ../sass/blocks.scss */
 #block-blockify-blockify-logo img {
   width: 75%;
 }
 
-/* line 360, ../sass/blocks.scss */
+/* line 361, ../sass/blocks.scss */
 #block-blog-recent {
   /* "Recent blog posts" block */
 }
 
-/* line 363, ../sass/blocks.scss */
+/* line 364, ../sass/blocks.scss */
 #block-book-navigation {
   /* "Book navigation" block for the current book's table of contents */
 }
 
-/* line 366, ../sass/blocks.scss */
+/* line 367, ../sass/blocks.scss */
 #block-comment-recent {
   /* "Recent comments" block */
 }
 
-/* line 369, ../sass/blocks.scss */
+/* line 370, ../sass/blocks.scss */
 #block-forum-active {
   /* "Active forum topics" block */
 }
 
-/* line 372, ../sass/blocks.scss */
+/* line 373, ../sass/blocks.scss */
 #block-forum-new {
   /* "New forum topics" block */
 }
 
-/* line 375, ../sass/blocks.scss */
+/* line 376, ../sass/blocks.scss */
 #block-locale-language {
   /* Language switcher block */
 }
 
-/* line 378, ../sass/blocks.scss */
+/* line 379, ../sass/blocks.scss */
 #block-menu-menu-NAME {
   /* Custom menu block */
 }
 
-/* line 381, ../sass/blocks.scss */
+/* line 382, ../sass/blocks.scss */
 #block-node-recent {
   /* "Recent content" block */
 }
 
-/* line 384, ../sass/blocks.scss */
+/* line 385, ../sass/blocks.scss */
 #block-node-syndicate {
   /* "Syndicate" block for primary RSS feed; see also page.css's .feed-icon */
 }
 
-/* line 387, ../sass/blocks.scss */
+/* line 388, ../sass/blocks.scss */
 #block-poll-recent {
   /* "Most recent poll" block */
 }
 
-/* line 390, ../sass/blocks.scss */
+/* line 391, ../sass/blocks.scss */
 #block-profile-author-information {
   /* "Author information" block for the profile of the page's author */
 }
 
-/* line 393, ../sass/blocks.scss */
+/* line 394, ../sass/blocks.scss */
 #block-search-form {
   /* "Search form" block */
 }
 
-/* line 396, ../sass/blocks.scss */
+/* line 397, ../sass/blocks.scss */
 #block-shortcut-shortcuts {
   /* "Shortcuts" block */
 }
 
-/* line 399, ../sass/blocks.scss */
+/* line 400, ../sass/blocks.scss */
 #block-statistics-popular {
   /* "Popular content" block */
 }
 
-/* line 402, ../sass/blocks.scss */
+/* line 403, ../sass/blocks.scss */
 #block-system-main-menu {
   /* "Main menu" block */
 }
 
-/* line 405, ../sass/blocks.scss */
+/* line 406, ../sass/blocks.scss */
 #block-system-management {
   /* "Management" block for Drupal management menu */
 }
 
-/* line 408, ../sass/blocks.scss */
+/* line 409, ../sass/blocks.scss */
 #block-system-navigation {
   /* "Navigation" block for Drupal navigation menu */
 }
-/* line 409, ../sass/blocks.scss */
+/* line 410, ../sass/blocks.scss */
 #block-system-navigation ul {
   padding-left: 0;
 }
 
-/* line 414, ../sass/blocks.scss */
+/* line 415, ../sass/blocks.scss */
 #block-system-user-menu {
   /* "User menu" block for Drupal user menu */
 }
 
-/* line 417, ../sass/blocks.scss */
+/* line 418, ../sass/blocks.scss */
 #block-system-help {
   /* "System help" block */
 }
 
-/* line 420, ../sass/blocks.scss */
+/* line 421, ../sass/blocks.scss */
 #block-system-main {
   /* "Main page content" block */
 }
 
-/* line 423, ../sass/blocks.scss */
+/* line 424, ../sass/blocks.scss */
 #block-system-powered-by {
   /* "Powered by Drupal" block */
 }
 
-/* line 426, ../sass/blocks.scss */
+/* line 427, ../sass/blocks.scss */
 #block-user-login {
   /* "User login form" block */
 }
 
-/* line 429, ../sass/blocks.scss */
+/* line 430, ../sass/blocks.scss */
 #block-user-new {
   /* "Who's new" block for a list of the newest users */
 }
 
-/* line 432, ../sass/blocks.scss */
+/* line 433, ../sass/blocks.scss */
 #block-user-online {
   /* "Who's online" block for a list of the online users */
 }
@@ -516,11 +517,11 @@
 /*
  * Social Media block
 */
-/* line 439, ../sass/blocks.scss */
+/* line 440, ../sass/blocks.scss */
 #block-widgets-s-socialmedia-share-default {
   float: right;
 }
-/* line 442, ../sass/blocks.scss */
+/* line 443, ../sass/blocks.scss */
 #block-widgets-s-socialmedia-share-default .widgets-element img {
   width: 85%;
 }

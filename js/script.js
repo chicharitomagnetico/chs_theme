@@ -21,34 +21,12 @@ $(window).load(function() {
     $("#edit-islandora-simple-search-query").focus(function() {
       $(this).val("");
     });
-    
+
    function update_header_position() {
       if ($('#admin-menu').length > 0) {
         $('#page').css('margin-top', $('#admin-menu').height());
       }
     }
-  
-    var $window = $(window);
-    var flexslider = $('.flexslider').data('flexslider');
-    
-    var $window = $(window);
-
-    function getGridSize() {
-      return (window.innerWidth < 600) ? 2 :
-        (window.innerWidth < 900) ? 3 : 6;
-    }
-
-    function fixItemCount() {
-      update_header_position();
-      var gridSize = getGridSize();
-      flexslider.vars.minItems = gridSize;
-      flexslider.vars.maxItems = gridSize;
-    }
-  $(window).resize(function() {
-    fixItemCount();
-  });
-
-    fixItemCount();
 });
 
 })(jQuery, Drupal, this, this.document);

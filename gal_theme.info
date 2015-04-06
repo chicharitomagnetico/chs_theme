@@ -28,6 +28,7 @@ stylesheets-conditional[IE 8][all][] = css/ie8.css
 ;stylesheets-conditional[IE 9][all][] = css/ie9.css
 
 scripts[] = js/script.js
+scripts[] = js/frontpage_behaviour.js
 
 regions[sub_header]     = Sub Header
 regions[header]         = Header

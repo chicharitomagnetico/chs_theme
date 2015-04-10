@@ -49,9 +49,12 @@ $zen-auto-include-item-base: false;
      by setting a max-width. */
   margin-left: auto;
   margin-right: auto;
-  padding: 0 1%;
+  padding: 0 0;
 }
 
+#main {
+  padding: 0 1%;
+}
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */

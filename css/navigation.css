@@ -95,71 +95,112 @@ li a.active {
 /* line 93, ../sass/navigation.scss */
 #block-menu-menu-header-menu .menu {
   width: 95%;
-}
-/* line 96, ../sass/navigation.scss */
-#block-menu-menu-header-menu ul {
-  margin: 1em 0.8em;
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
   margin-left: 0px;
   padding-left: 2.5%;
   float: left;
 }
-/* line 101, ../sass/navigation.scss */
-#block-menu-menu-header-menu ul li {
+/* line 102, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li:hover > a, #block-menu-menu-header-menu .menu li.active > a {
+  color: white !important;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+/* line 106, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li {
   display: inline-block;
   float: left;
   margin: 0 0.8em;
 }
-/* line 106, ../sass/navigation.scss */
-#block-menu-menu-header-menu ul li.first {
+/* line 110, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li a {
+  padding-left: 2px;
+  padding-right: 2px;
+  display: block;
+  float: left;
+  color: white;
+  text-decoration: none;
+  height: 30px;
+  line-height: 30px;
+}
+/* line 119, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li a :hover {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(155, 155, 155, 0.05)), to(rgba(55, 55, 55, 0.05)));
+  background: -moz-linear-gradient(top, rgba(155, 155, 155, 0.05), rgba(55, 55, 55, 0.05));
+}
+/* line 124, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li a .current, #block-menu-menu-header-menu .menu li a .current:hover {
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(160, 160, 160, 0.05)), to(rgba(60, 60, 60, 0.05)));
+  background: -moz-linear-gradient(top, rgba(168, 168, 168, 0.05), rgba(69, 69, 69, 0.05));
+}
+/* line 131, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li.first {
   margin-left: 0;
 }
-/* line 109, ../sass/navigation.scss */
-#block-menu-menu-header-menu ul li.last {
+/* line 134, ../sass/navigation.scss */
+#block-menu-menu-header-menu .menu li.last {
   float: right;
   margin-right: 0px;
 }
 
-/* line 115, ../sass/navigation.scss */
+/* line 141, ../sass/navigation.scss */
 .tabs-primary.tabs.primary {
   width: 100%;
 }
 
-/* line 119, ../sass/navigation.scss */
+/*
+ * In collection text ul
+ */
+/* line 150, ../sass/navigation.scss */
+.islandora-in-collection-wrapper ul li {
+  list-style: none;
+}
+
+/* line 156, ../sass/navigation.scss */
 #widgets-element-socialmedia_share-default {
   float: right;
 }
 
-/* line 123, ../sass/navigation.scss */
+/* line 160, ../sass/navigation.scss */
 div.widgets-element-horizontal {
   float: left;
 }
 
-/* line 127, ../sass/navigation.scss */
+/* line 164, ../sass/navigation.scss */
 #block-menu-menu-footer-menu, #block-menu-menu-footer-sub-menu {
   font-size: 75%;
   float: left;
   clear: left;
 }
-/* line 131, ../sass/navigation.scss */
+/* line 168, ../sass/navigation.scss */
 #block-menu-menu-footer-menu ul, #block-menu-menu-footer-sub-menu ul {
   list-style: none;
   margin: 1em 0;
 }
-/* line 134, ../sass/navigation.scss */
+/* line 171, ../sass/navigation.scss */
 #block-menu-menu-footer-menu ul li, #block-menu-menu-footer-sub-menu ul li {
   display: inline-block;
   margin-right: 1em;
 }
-/* line 137, ../sass/navigation.scss */
+/* line 174, ../sass/navigation.scss */
 #block-menu-menu-footer-menu ul li a, #block-menu-menu-footer-menu ul li a:visited, #block-menu-menu-footer-sub-menu ul li a, #block-menu-menu-footer-sub-menu ul li a:visited {
   color: #424143;
 }
-/* line 140, ../sass/navigation.scss */
+/* line 177, ../sass/navigation.scss */
 #block-menu-menu-footer-menu ul li a:hover, #block-menu-menu-footer-sub-menu ul li a:hover {
   color: #419845;
 }
 
-/* line 148, ../sass/navigation.scss */
+/* line 185, ../sass/navigation.scss */
+#block-menu-menu-footer-menu {
+  font-size: 105%;
+}
+
+/* line 189, ../sass/navigation.scss */
 .footer-logo {
   float: left;
 }
@@ -167,7 +208,7 @@ div.widgets-element-horizontal {
 /*
   *
   */
-/* line 155, ../sass/navigation.scss */
+/* line 196, ../sass/navigation.scss */
 .sidebar {
   box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
   padding: 2em 1.5em;

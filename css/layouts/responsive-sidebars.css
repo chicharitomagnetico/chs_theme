@@ -18,13 +18,18 @@
      by setting a max-width. */
   margin-left: auto;
   margin-right: auto;
+  padding: 0 0;
+}
+
+/* line 55, ../../sass/layouts/responsive-sidebars.scss */
+#main {
   padding: 0 1%;
 }
 
 /*
  * Apply the shared properties of grid items in a single, efficient ruleset.
  */
-/* line 65, ../../sass/layouts/responsive-sidebars.scss */
+/* line 68, ../../sass/layouts/responsive-sidebars.scss */
 #header,
 #content,
 #navigation,
@@ -63,14 +68,14 @@
  * Navigation bar
  */
 @media all and (min-width: 320px) {
-  /* line 84, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 87, ../../sass/layouts/responsive-sidebars.scss */
   #main {
     padding-top: 1.1em;
     /* Move all the children of #main down to make room. */
     position: relative;
   }
 
-  /* line 88, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 91, ../../sass/layouts/responsive-sidebars.scss */
   #navigation {
     top: 0;
     /* Move the navbar up inside #main's padding. */
@@ -78,7 +83,7 @@
   }
 }
 @media all and (min-width: 0px) and (max-width: 759px) {
-  /* line 98, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 101, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
   .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block-1,
   .browse-content {
@@ -87,72 +92,72 @@
     min-height: 0 !important;
   }
 
-  /* line 103, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 106, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-browse-by, .block-front-page-browse-collection {
     width: 100% !important;
   }
 
-  /* line 106, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 109, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-footer-menu {
     display: table-cell;
     float: left;
   }
 
-  /* line 110, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 113, ../../sass/layouts/responsive-sidebars.scss */
   #block-widgets-s-socialmedia-share-default {
     top: auto !important;
   }
 
-  /* line 113, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 116, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-footer-sub-menu {
     display: table-cell;
   }
 
-  /* line 116, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 119, ../../sass/layouts/responsive-sidebars.scss */
   .submit-collection, .submit-collection-anon {
     display: none;
   }
 
-  /* line 119, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 122, ../../sass/layouts/responsive-sidebars.scss */
   .image-block-front {
     margin-right: 0 !important;
   }
 
-  /* line 122, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 125, ../../sass/layouts/responsive-sidebars.scss */
   img {
     display: block;
     margin: 0 auto;
   }
 
-  /* line 126, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 129, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header {
     width: 100%;
     float: left !important;
     margin-top: 10px !important;
   }
-  /* line 130, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 133, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header #block-menu-menu-header-menu {
     text-align: center;
     float: none !important;
     margin: -12px -3px 0;
   }
 
-  /* line 138, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 141, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple, .image-block-front, .welcome {
     width: 100% !important;
     height: 50px !important;
     float: left !important;
   }
-  /* line 142, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 145, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple #edit-simple, .image-block-front #edit-simple, .welcome #edit-simple {
     margin-top: 1.5em !important;
   }
-  /* line 144, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 147, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple #edit-simple .form-text, .image-block-front #edit-simple .form-text, .welcome #edit-simple .form-text {
     width: 97% !important;
   }
 
-  /* line 149, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 152, ../../sass/layouts/responsive-sidebars.scss */
   #block-accordion-rotator-accordion-rotator {
     max-width: 98.8% !important;
   }
@@ -164,7 +169,7 @@
   /*
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 165, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 168, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
@@ -172,7 +177,7 @@
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 169, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 172, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -184,7 +189,7 @@
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 179, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 182, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second #content {
     /* Span 2 columns, starting in 1st column from left. */
     float: left;
@@ -193,7 +198,7 @@
     margin-right: -66.66667%;
     width: 73.333% !important;
   }
-  /* line 184, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 187, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 3rd column from left. */
     float: left;
@@ -207,7 +212,7 @@
   /*
    * The layout when there are two sidebars.
    */
-  /* line 196, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 199, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars #content {
     /* Span 2 columns, starting in 2nd column from left. */
     float: left;
@@ -215,7 +220,7 @@
     margin-left: 33.33333%;
     margin-right: -100%;
   }
-  /* line 200, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 203, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -223,7 +228,7 @@
     margin-left: 0%;
     margin-right: -33.33333%;
   }
-  /* line 204, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 207, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
     /* Start a new row and span all 3 columns. */
     float: left;
@@ -234,7 +239,7 @@
     padding-right: 0;
     clear: left;
   }
-  /* line 209, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 212, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second .block {
     padding-left: 10px;
     padding-right: 10px;
@@ -244,7 +249,7 @@
     box-sizing: border-box;
     word-wrap: break-word;
   }
-  /* line 212, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 215, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
     /* Span 1 column, starting in the 1st column from left. */
     float: left;
@@ -253,7 +258,7 @@
     margin-right: -33.33333%;
     clear: left;
   }
-  /* line 216, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 219, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
     /* Span 1 column, starting in the 2nd column from left. */
     float: left;
@@ -261,7 +266,7 @@
     margin-left: 33.33333%;
     margin-right: -66.66667%;
   }
-  /* line 219, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 222, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second .block:nth-child(3n) {
     /* Span 1 column, starting in the 3rd column from left. */
     float: left;
@@ -271,28 +276,28 @@
   }
 }
 @media all and (min-width: 760px) and (max-width: 959px) {
-  /* line 229, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 232, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
   .block-google-analytics-reports {
     width: 28.45%;
   }
 
-  /* line 232, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 235, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-frontpage-solr-boxes-block-1 {
     width: 95.9% !important;
   }
 
-  /* line 235, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 238, ../../sass/layouts/responsive-sidebars.scss */
   .block-front-page-browse-collection {
     width: 100% !important;
   }
 
-  /* line 238, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 241, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-browse-by {
     width: 100% !important;
   }
 
-  /* line 241, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 244, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple, .image-block-front, .welcome {
     width: 100% !important;
     float: left !important;
@@ -300,25 +305,25 @@
     height: 60px !important;
   }
 
-  /* line 248, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 251, ../../sass/layouts/responsive-sidebars.scss */
   .view-frontpage-solr-boxes .views-responsive-grid .views-row {
     padding: 20px 10px;
     margin-right: 2em;
   }
 
-  /* line 253, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 256, ../../sass/layouts/responsive-sidebars.scss */
   .submit-collection, .submit-collection-anon {
     font-size: 110% !important;
     line-height: 6.1em !important;
     width: 29.5%;
     height: 100px !important;
   }
-  /* line 258, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 261, ../../sass/layouts/responsive-sidebars.scss */
   .submit-collection a, .submit-collection-anon a {
     margin-left: 1em !important;
   }
 
-  /* line 262, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 265, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple #edit-simple {
     margin-top: 2.2em !important;
   }
@@ -330,7 +335,7 @@
   /*
    * The layout when there is only one sidebar, the left one.
    */
-  /* line 277, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 280, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first #content {
     /* Span 4 columns, starting in 2nd column from left. */
     float: left;
@@ -340,7 +345,7 @@
     margin-left: 21% !important;
     width: 79% !important;
   }
-  /* line 283, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 286, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-first .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -354,7 +359,7 @@
   /*
    * The layout when there is only one sidebar, the right one.
    */
-  /* line 295, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 298, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second #content {
     /* Span 4 columns, starting in 1st column from left. */
     float: left;
@@ -364,7 +369,7 @@
     width: 79% !important;
     margin-right: -79% !important;
   }
-  /* line 301, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 304, ../../sass/layouts/responsive-sidebars.scss */
   .sidebar-second .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -376,7 +381,7 @@
   /*
    * The layout when there are two sidebars.
    */
-  /* line 311, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 314, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars #content {
     /* Span 3 columns, starting in 2nd column from left. */
     float: left;
@@ -384,7 +389,7 @@
     margin-left: 20%;
     margin-right: -80%;
   }
-  /* line 315, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 318, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-first {
     /* Span 1 column, starting in 1st column from left. */
     float: left;
@@ -392,7 +397,7 @@
     margin-left: 0%;
     margin-right: -20%;
   }
-  /* line 319, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 322, ../../sass/layouts/responsive-sidebars.scss */
   .two-sidebars .region-sidebar-second {
     /* Span 1 column, starting in 5th column from left. */
     float: left;
@@ -401,121 +406,121 @@
     margin-right: -100%;
   }
 
-  /* line 324, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 327, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
   .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block, .block-front-page-browse-collection {
     width: 29.4%;
   }
 
-  /* line 327, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 330, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-frontpage-solr-boxes-block-1 {
     width: 96.8% !important;
   }
 
-  /* line 330, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 333, ../../sass/layouts/responsive-sidebars.scss */
   .image-block-front, .submit-collection, .submit-collection-anon, .welcome {
     width: 36%;
   }
 
-  /* line 334, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 337, ../../sass/layouts/responsive-sidebars.scss */
   .view-frontpage-solr-boxes .views-responsive-grid .views-row {
     padding: 20px 10px;
     margin-right: 2em;
   }
 
-  /* line 339, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 342, ../../sass/layouts/responsive-sidebars.scss */
   #block-accordion-rotator-accordion-rotator {
     width: 60.3% !important;
   }
 
-  /* line 342, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 345, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header {
     height: 1.5em !important;
     margin-top: 10px !important;
   }
 }
 @media all and (min-width: 1200px) {
-  /* line 350, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 353, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-top-site-searches-block, #block-views-top-facet-searches-block,
   .block-google-analytics-reports, #block-views-frontpage-solr-boxes-block, .block-front-page-browse-collection {
     width: 30.2%;
   }
 
-  /* line 353, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 356, ../../sass/layouts/responsive-sidebars.scss */
   #block-views-frontpage-solr-boxes-block-1 {
     width: 97.5% !important;
   }
 
-  /* line 356, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 359, ../../sass/layouts/responsive-sidebars.scss */
   #block-islandora-solr-simple, .image-block-front, .submit-collection, .submit-collection-anon, .welcome {
     width: 40%;
   }
 
-  /* line 360, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 363, ../../sass/layouts/responsive-sidebars.scss */
   .view-frontpage-solr-boxes .views-responsive-grid .views-row {
     padding: 20px 10px;
     margin-right: 2em;
   }
 
-  /* line 365, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 368, ../../sass/layouts/responsive-sidebars.scss */
   #block-accordion-rotator-accordion-rotator {
     width: 66.9% !important;
   }
 }
 @media all and (max-width: 600px) {
-  /* line 371, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 374, ../../sass/layouts/responsive-sidebars.scss */
   #name-and-slogan {
     text-align: center;
     width: 100%;
   }
 
-  /* line 375, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 378, ../../sass/layouts/responsive-sidebars.scss */
   #logo {
     padding-bottom: 15px !important;
     width: 100%;
   }
 
-  /* line 379, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 382, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header #block-menu-menu-header-menu {
     margin-left: 0px !important;
     margin-top: 10px !important;
   }
 }
 @media all and (max-width: 450px) {
-  /* line 386, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 389, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-header-menu {
     height: 60px !important;
   }
-  /* line 389, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 392, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-header-menu ul li {
     margin-left: 0px !important;
   }
-  /* line 392, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 395, ../../sass/layouts/responsive-sidebars.scss */
   #block-menu-menu-header-menu ul li.last {
     float: left !important;
     padding-top: 20px !important;
   }
 
-  /* line 399, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 402, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header #block-menu-menu-header-menu {
     margin-left: 0px !important;
     margin-top: 10px !important;
   }
 }
 @media all and (max-width: 768px) {
-  /* line 406, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 409, ../../sass/layouts/responsive-sidebars.scss */
   .region-sub-header {
     height: auto !important;
   }
 }
 @media all and (max-width: 960px) {
-  /* line 412, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 415, ../../sass/layouts/responsive-sidebars.scss */
   #footer {
     text-align: center !important;
     width: 100% !important;
   }
 
-  /* line 416, ../../sass/layouts/responsive-sidebars.scss */
+  /* line 419, ../../sass/layouts/responsive-sidebars.scss */
   #block-widgets-s-socialmedia-share-default {
     display: inline-block !important;
     float: none !important;

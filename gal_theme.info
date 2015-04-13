@@ -29,7 +29,7 @@ stylesheets-conditional[IE 8][all][] = css/ie8.css
 scripts[] = js/script.js
 scripts[] = js/frontpage_behaviour.js
 
-regions[sub_header]     = Su]b Header
+regions[sub_header]     = Sub Header
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

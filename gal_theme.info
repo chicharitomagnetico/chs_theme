@@ -22,16 +22,14 @@ stylesheets[all][] = sass-css/fields.css
 stylesheets[all][] = sass-css/print.css
 
 stylesheets[all][] = css/tabs.css
-stylesheets[all][] = css/tabs-rtl.css
 
 ; Set the conditional stylesheets that are processed by IE.
 stylesheets-conditional[IE 8][all][] = css/ie8.css
-;stylesheets-conditional[IE 9][all][] = css/ie9.css
 
 scripts[] = js/script.js
 scripts[] = js/frontpage_behaviour.js
 
-regions[sub_header]     = Sub Header
+regions[sub_header]     = Su]b Header
 regions[header]         = Header
 regions[navigation]     = Navigation bar
 regions[highlighted]    = Highlighted

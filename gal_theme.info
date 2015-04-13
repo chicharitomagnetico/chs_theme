@@ -8,20 +8,21 @@ base theme  = zen
 stylesheets[all][] = system.menus.css
 
 ; Then we add our own stylesheets.
-stylesheets[all][] = css/normalize.css
-stylesheets[all][] = css/wireframes.css
-stylesheets[all][] = css/layouts/responsive-sidebars.css
-stylesheets[all][] = css/page-backgrounds.css
+stylesheets[all][] = sass-css/normalize.css
+stylesheets[all][] = sass-css/wireframes.css
+stylesheets[all][] = sass-css/layouts/responsive-sidebars.css
+stylesheets[all][] = sass-css/pages.css
+stylesheets[all][] = sass-css/blocks.css
+stylesheets[all][] = sass-css/navigation.css
+stylesheets[all][] = sass-css/views-styles.css
+stylesheets[all][] = sass-css/nodes.css
+stylesheets[all][] = sass-css/comments.css
+stylesheets[all][] = sass-css/forms.css
+stylesheets[all][] = sass-css/fields.css
+stylesheets[all][] = sass-css/print.css
+
 stylesheets[all][] = css/tabs.css
-stylesheets[all][] = css/pages.css
-stylesheets[all][] = css/blocks.css
-stylesheets[all][] = css/navigation.css
-stylesheets[all][] = css/views-styles.css
-stylesheets[all][] = css/nodes.css
-stylesheets[all][] = css/comments.css
-stylesheets[all][] = css/forms.css
-stylesheets[all][] = css/fields.css
-stylesheets[all][] = css/print.css
+stylesheets[all][] = css/tabs-rtl.css
 
 ; Set the conditional stylesheets that are processed by IE.
 stylesheets-conditional[IE 8][all][] = css/ie8.css

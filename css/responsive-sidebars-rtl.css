@@ -1,0 +1,368 @@
+/**
+ * @file
+ * RTL companion for the responsive-sidebars.css file.
+ */
+/**
+ * @file
+ * Positioning for responsive layout .
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000327}}
+.container {
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000356}}
+.container:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000332}}
+.aside1 {
+  float: right;
+  width: 40%;
+  margin-right: 0%;
+  margin-left: -40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000337}}
+.content {
+  float: right;
+  width: 80%;
+  margin-right: 40%;
+  margin-left: -120%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000342}}
+.aside2 {
+  float: right;
+  width: 20%;
+  margin-right: 120%;
+  margin-left: -140%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000347}}
+.footer1 {
+  clear: right;
+  float: right;
+  width: 60%;
+  margin-right: 80%;
+  margin-left: -140%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000352}}
+.footer2 {
+  float: right;
+  width: 80%;
+  margin-right: 0%;
+  margin-left: -80%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  background-color: #ff91b1;
+  border: 1px solid #555555;
+}
+
+/*
+ * Center the page.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000381}}
+#page,
+.region-bottom {
+  /* For screen sizes larger than 1200px, prevent excessively long lines of text
+     by setting a max-width. */
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+
+/*
+ * Apply the shared properties of grid items in a single, efficient ruleset.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\0000399}}
+#header,
+#content,
+#navigation,
+.region-sidebar-first,
+.region-sidebar-second,
+#footer {
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+
+/*
+ * Containers for grid items and flow items.
+ */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
+#header:before, #header:after,
+#main:before,
+#main:after,
+#footer:before,
+#footer:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass-extensions\/zen-grids\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000356}}
+#header:after,
+#main:after,
+#footer:after {
+  clear: both;
+}
+
+/*
+ * Navigation bar
+ */
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003118}}
+  #main {
+    padding-top: 3em;
+    /* Move all the children of #main down to make room. */
+    position: relative;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003122}}
+  #navigation {
+    position: absolute;
+    top: 0;
+    /* Move the navbar up inside #main's padding. */
+    height: 3em;
+    width: 100%;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 959px) {
+  /*
+   * Use 3 grid columns for smaller screens.
+   */
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003141}}
+  .sidebar-first #content {
+    /* Span 2 columns, starting in 2nd column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003145}}
+  .sidebar-first .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003155}}
+  .sidebar-second #content {
+    /* Span 2 columns, starting in 1st column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 0%;
+    margin-left: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003159}}
+  .sidebar-second .region-sidebar-second {
+    /* Span 1 column, starting in 3rd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003169}}
+  .two-sidebars #content {
+    /* Span 2 columns, starting in 2nd column from left. */
+    float: right;
+    width: 66.66667%;
+    margin-right: 33.33333%;
+    margin-left: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003173}}
+  .two-sidebars .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003177}}
+  .two-sidebars .region-sidebar-second {
+    /* Start a new row and span all 3 columns. */
+    float: right;
+    width: 100%;
+    margin-right: 0%;
+    margin-left: -100%;
+    padding-left: 0;
+    padding-right: 0;
+    clear: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003182}}
+  .two-sidebars .region-sidebar-second .block {
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003185}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+1) {
+    /* Span 1 column, starting in the 1st column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    clear: right;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003189}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n+2) {
+    /* Span 1 column, starting in the 2nd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 33.33333%;
+    margin-left: -66.66667%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003192}}
+  .two-sidebars .region-sidebar-second .block:nth-child(3n) {
+    /* Span 1 column, starting in the 3rd column from left. */
+    float: right;
+    width: 33.33333%;
+    margin-right: 66.66667%;
+    margin-left: -100%;
+  }
+}
+@media all and (min-width: 960px) {
+  /*
+   * Use 5 grid columns for larger screens.
+   */
+  /*
+   * The layout when there is only one sidebar, the left one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003210}}
+  .sidebar-first #content {
+    /* Span 4 columns, starting in 2nd column from left. */
+    float: right;
+    width: 80%;
+    margin-right: 20%;
+    margin-left: -100%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003214}}
+  .sidebar-first .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 20%;
+    margin-right: 0%;
+    margin-left: -20%;
+  }
+
+  /*
+   * The layout when there is only one sidebar, the right one.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003224}}
+  .sidebar-second #content {
+    /* Span 4 columns, starting in 1st column from left. */
+    float: right;
+    width: 80%;
+    margin-right: 0%;
+    margin-left: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003228}}
+  .sidebar-second .region-sidebar-second {
+    /* Span 1 column, starting in 5th column from left. */
+    float: right;
+    width: 20%;
+    margin-right: 80%;
+    margin-left: -100%;
+  }
+
+  /*
+   * The layout when there are two sidebars.
+   */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003238}}
+  .two-sidebars #content {
+    /* Span 3 columns, starting in 2nd column from left. */
+    float: right;
+    width: 60%;
+    margin-right: 20%;
+    margin-left: -80%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003242}}
+  .two-sidebars .region-sidebar-first {
+    /* Span 1 column, starting in 1st column from left. */
+    float: right;
+    width: 20%;
+    margin-right: 0%;
+    margin-left: -20%;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/html\/drupal-7\.15\/sites\/all\/themes\/ir7\/sass\/layouts\/responsive-sidebars\.scss}line{font-family:\00003246}}
+  .two-sidebars .region-sidebar-second {
+    /* Span 1 column, starting in 5th column from left. */
+    float: right;
+    width: 20%;
+    margin-right: 80%;
+    margin-left: -100%;
+  }
+}

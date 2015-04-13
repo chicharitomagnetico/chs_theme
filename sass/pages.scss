@@ -59,9 +59,14 @@ html {
     letter-spacing: 1.2pt;
     line-height: 1.1em;
 }
-#footer menu, ol, ul, .item-list ul {
-    padding: 0 0 0 5px;
+#footer menu, ol, ul{
+    padding: 0 0 0 0;
 }
+
+.item-list ul {
+  padding: 0 0 0 0;
+}
+
 #block-menu-menu-footer-menu {
     font-size: .95em;
 }
@@ -112,7 +117,7 @@ p.flex-caption {
   margin: 0;
   padding: 10px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
   width: 100%;
   position: absolute;

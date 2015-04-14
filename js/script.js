@@ -26,6 +26,9 @@ $(window).load(function() {
       if ($('#admin-menu').length > 0) {
         $('#page').css('margin-top', $('#admin-menu').height());
       }
+      if ($('#toolbar').length > 0) {
+        $('#page').css('margin-top', $('#toolbar').height());
+      }
     }
 });
 

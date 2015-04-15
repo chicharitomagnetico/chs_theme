@@ -38,7 +38,7 @@ html {
 }
 .region-sub-header {
     padding-top: 5px;
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
 #page {
     background: #FFFFFF;
@@ -46,8 +46,6 @@ html {
 }
 #block-menu-menu-header-menu {
     width: 100%;
-    background: #02686D;
-    text-align: left;
     font-size: 1em;
     height: 35px;
 }
@@ -63,12 +61,23 @@ html {
     padding: 0 0 0 0;
 }
 
+nav {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
+}
+
 .item-list ul {
   padding: 0 0 0 0;
 }
 
 #block-menu-menu-footer-menu {
     font-size: .95em;
+}
+
+.view-footer-social-menu-links td {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 #page-title {
@@ -160,6 +169,10 @@ p.flex-caption {
   }
 }
 
+.block-front-page-browse-collection table {
+  table-layout: fixed;
+}
+
 div.widgets-element-horizontal {
     float: right;
 }
@@ -222,6 +235,11 @@ dl.solr-thumb {
 /*
  * Header
  */
+.h-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
+}
 
 /*Accordion Rotator */
 
@@ -234,8 +252,8 @@ div.accordion_button.previous {
 
 
 #header {
-  padding-bottom: 10px;
   padding-top: 20px;
+  background-color: #efefef;
 }
 
 .logged-in.not-front #header {
@@ -249,6 +267,7 @@ div.accordion_button.previous {
 
   img {
     vertical-align: bottom;
+    max-width: 13em;
   }
 }
 
@@ -256,6 +275,7 @@ div.accordion_button.previous {
   float: left;
   margin-left: 2%;
   margin-top: -0.2em;
+  background: transparent;
 }
 
 #site-name { /* The name of the website */
@@ -293,6 +313,9 @@ div.accordion_button.previous {
 
 #main {
   background: none !important;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
 }
 
 /*
@@ -300,11 +323,13 @@ div.accordion_button.previous {
  */
 
 #content {
-  float: left;
   width: 100%;
   box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
   background: #fff;
   padding: 1.5em 1em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
 }
 
 .front #content {
@@ -487,6 +512,13 @@ ul.pager li.pager-current {
 
 #footer {
   margin-top: 1.8em;
+  background-color: #efefef;
+}
+
+.f-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 990px;
 }
 
 /*

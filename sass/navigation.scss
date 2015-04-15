@@ -48,7 +48,7 @@ li a.active {
   padding-top: 5px;
   border-bottom: 2px solid grey;
   .block {
-    margin-bottom: 0;
+    margin-bottom: 0; 
   }
   .block-menu .block-title,
   .block-menu-block .block-title {
@@ -70,7 +70,7 @@ li a.active {
 }
 
 .region-sub-header {
-  height: auto;
+  height: 25px;
   margin-top: 0px;
   margin-left: 0px !important;
   background-color: #005686;
@@ -87,12 +87,34 @@ li a.active {
   float: right; /* LTR */
 }
 
-#block-menu-menu-header-menu {
-  margin-bottom: 0;
-  font-size: 85%;
+.sub-header-region-wrapper {
   max-width:990px;
   margin-left: auto;
   margin-right: auto;
+}
+
+#block-shib-auth-login-box {
+  margin-bottom: 0;
+  font-size: 85%;
+  #shib_login_url a{
+    padding-left: 2px;
+    padding-right: 2px;
+    display:block;
+    float:left;
+    color:white;
+    text-decoration:none;
+    height:20px;
+    line-height: 20px;
+  }
+  #shib_login_url a:hover{
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+#block-menu-menu-header-menu {
+  margin-bottom: 0;
+  font-size: 85%;
   .menu {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
@@ -115,8 +137,8 @@ li a.active {
         float:left;
         color:white;
         text-decoration:none;
-        height:30px;
-        line-height: 30px;
+        height:20px;
+        line-height: 20px;
         :hover {
           background: white;
           background: -webkit-gradient(linear,left top,left bottom,from(rgba(155,155,155,0.05)),to(rgba(55,55,55,0.05)));

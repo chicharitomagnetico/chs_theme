@@ -37,18 +37,22 @@ html {
     font-family: 'Open Sans',helvetica,airal,sans-serif;
 }
 .region-sub-header {
-    padding-top: 5px;
-    padding-bottom: 10px;
+  height: 1.5em !important;
 }
 #page {
     background: #FFFFFF;
-    margin-top: 5px;
 }
 #block-menu-menu-header-menu {
-    width: 100%;
+    float:right;
     font-size: 1em;
     height: 35px;
 }
+.block-shib-auth {
+  float:right;
+  padding-left: 15px;
+  font-size: 85%;
+}
+
 #content {
     box-shadow: none!important;
 }

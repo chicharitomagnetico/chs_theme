@@ -36,7 +36,7 @@ ul li.leaf {
  */
 
 li a.active {
-  color: #000;
+  //color: #000;
 }
 
 /*
@@ -44,9 +44,6 @@ li a.active {
  */
 
 #navigation {
-  padding-bottom: 5px;
-  padding-top: 5px;
-  border-bottom: 2px solid grey;
   .block {
     margin-bottom: 0; 
   }
@@ -73,7 +70,7 @@ li a.active {
   height: 25px;
   margin-top: 0px;
   margin-left: 0px !important;
-  background-color: #005686;
+  background-color: black;
 }
 
 /*
@@ -88,7 +85,7 @@ li a.active {
 }
 
 .sub-header-region-wrapper {
-  max-width:990px;
+  max-width:1600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -115,14 +112,16 @@ li a.active {
 #block-menu-menu-header-menu {
   margin-bottom: 0;
   font-size: 85%;
+  width: 100%;
+  box-sizeing: border-box;
   .menu {
     padding-top: 0px !important;
     padding-bottom: 0px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
     margin-left: 0px;
-    padding-left: 2.5%;
-    float:right;
+    float:left;
+    width: 100%;
     li:hover >a,li.active > a{
       color: white !important;
       background-color: rgba(0, 0, 0, 0.4);
@@ -156,6 +155,7 @@ li a.active {
     }
     li.last {
       margin-right: 0px;
+      float: right;
     }
   }
 }
@@ -183,10 +183,8 @@ div.widgets-element-horizontal {
   float: left;
 }
 
-#block-menu-menu-footer-menu, #block-menu-menu-footer-sub-menu{
+#block-menu-menu-footer-menu{
   font-size: 75%;
-  float: left;
-  clear:left;
   ul {
     list-style: none;
     margin: 1em 0;
@@ -201,7 +199,24 @@ div.widgets-element-horizontal {
       }
     }
   }
+}
 
+#block-menu-menu-footer-sub-menu{
+  font-size: 75%;
+  ul {
+    list-style: none;
+    margin: 1em 0;
+    li {
+     display: inline-block; 
+     margin-right: 1em;
+      a, a:visited {
+        //color: #424143;
+      }
+      a:hover {
+        //color: #419845;
+      }
+    }
+  }
 }
 
 #block-menu-menu-footer-menu{
@@ -215,10 +230,6 @@ div.widgets-element-horizontal {
 /*
   *
   */
-.sidebar {
-  box-shadow: 0 0 5px 1px rgba(38, 37, 38, 0.3);
-  padding: 2em 1.5em;
-}
 
 /*
  * Menu blocks
@@ -234,5 +245,3 @@ div.widgets-element-horizontal {
  * these limitations, see http://drupal.org/project/menu_block
  */
 
-.block-menu-block {
-}

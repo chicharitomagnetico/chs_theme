@@ -12,7 +12,7 @@
    ========================================================================== */
 
 @import "base";
-
+@import "variables";
 /* =============================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -159,16 +159,17 @@ body {
 
 a:link {
   text-decoration: none;
-  color: #419845;
+  color: darken($dark-blue,15%);
 }
 
 a:visited {
-  color: #419845;
+  color: grey;
 }
 
 a:hover,
 a:focus {
-  color: #888;
+  @include transition(all 0.2s ease-in-out);
+  color: $active;
 }
 
 a:active {

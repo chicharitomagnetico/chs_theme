@@ -1,5 +1,5 @@
 screenshot  = screenshot.png
-name        = Galway Theme
+name        = Tulane Theme
 description = Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 core        = 7.x
 base theme  = zen
@@ -10,7 +10,8 @@ stylesheets[all][] = system.menus.css
 ; Then we add our own stylesheets.
 stylesheets[all][] = sass-css/normalize.css
 stylesheets[all][] = sass-css/wireframes.css
-stylesheets[all][] = sass-css/layouts/responsive-sidebars.css
+;stylesheets[all][] = sass-css/layouts/responsive-sidebars.css
+stylesheets[all][] = sass-css/responsive.css
 stylesheets[all][] = sass-css/pages.css
 stylesheets[all][] = sass-css/blocks.css
 stylesheets[all][] = sass-css/navigation.css
@@ -20,6 +21,7 @@ stylesheets[all][] = sass-css/comments.css
 stylesheets[all][] = sass-css/forms.css
 stylesheets[all][] = sass-css/fields.css
 stylesheets[all][] = sass-css/print.css
+stylesheets[all][] = sass-css/layouts/front-layout.css
 
 stylesheets[all][] = css/tabs.css
 
@@ -117,6 +119,11 @@ designkit[color][navigation][default] = "#ffffff"
 designkit[color][footer][title] = "Footer color"
 designkit[color][footer][description] = "Footer color."
 designkit[color][footer][default] = "#ffffff"
+
+; Page Bottom Color
+designkit[color][bottom][title] = "Page Bottom color"
+designkit[color][bottom][description] = "Page Bottom color."
+designkit[color][bottom][default] = "#ffffff"
 
 ; Sidebars color
 designkit[color][sidebars][title] = "Sidebars color"

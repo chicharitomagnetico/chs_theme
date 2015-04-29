@@ -8,7 +8,7 @@
  */
 
 @import "base";
-
+@import "_variables";
 
 .region-header {
 }
@@ -17,7 +17,6 @@
  * Client based customizations.
  */
 .mean-bar {
-  background-color: #02686d !important;
   margin-top: 0px;
 }
 
@@ -36,14 +35,11 @@
 html {
     font-family: 'Open Sans',helvetica,airal,sans-serif;
 }
-.region-sub-header {
-  height: 1.5em !important;
-}
 #page {
     background: #FFFFFF;
 }
 #block-menu-menu-header-menu {
-    float:right;
+    float: left;
     font-size: 1em;
     height: 35px;
 }
@@ -51,6 +47,11 @@ html {
   float:right;
   padding-left: 15px;
   font-size: 85%;
+}
+
+.islandora-basic-collection-wrapper img {
+  max-height: 30em;
+  width: 100%;
 }
 
 #content {
@@ -68,7 +69,7 @@ html {
 nav {
   margin-left: auto;
   margin-right: auto;
-  max-width: 990px;
+  max-width: 1600px;
 }
 
 .item-list ul {
@@ -84,11 +85,30 @@ nav {
   padding-right: 5px;
 }
 
+.browse-all-item-wrapper {
+  text-align: center;
+}
+
+.new-collections-item-wrapper img {
+  vertical-align: middle;
+  max-width: 5em;
+}
+
+#mediaplayer{
+  max-width: 100%;
+}
+
 #page-title {
   background: none !important;
   font-weight: normal;
+  color:$gold !important;
 }
 
+.region.region-highlighted {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
+}
 
 /*
  * View Slideshow
@@ -138,12 +158,14 @@ p.flex-caption {
 
 .flexslider {
   margin-bottom: 40px;
+  a{
+    display: inherit;
+  }
   .slides {
     img {
       display: inline-block;
       height: auto;
-      max-height: 10em;
-      max-width: 10em;
+      max-height: 30em;
     }
   }
 }
@@ -170,6 +192,13 @@ p.flex-caption {
     img {
       opacity: 0;
     }
+  }
+}
+
+.view-content{
+  table {
+    width: 100%;
+    table-layout: fixed;
   }
 }
 
@@ -205,15 +234,19 @@ div.widgets-element-horizontal {
   }
 }
 
+.block-border-bottom, #content{
+  display: inline-block;
+  border-bottom: 1px solid black;
+}
+
 /*
  * Searching
  */
 
 .islandora-solr-search-result {
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: none;
+  border-bottom: none;
   background: #f7f9f6;
-  box-shadow: 0 3px 3px -3px #808184;
 }
 
 .islandora-solr-search-results {
@@ -236,13 +269,20 @@ dl.solr-thumb {
   margin: 2% 0 2% 1%;
 }
 
+.front{
+  #navigation{
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+}
+
 /*
  * Header
  */
 .h-wrapper {
   margin-left: auto;
   margin-right: auto;
-  max-width: 990px;
+  max-width: 1600px;
 }
 
 /*Accordion Rotator */
@@ -257,7 +297,7 @@ div.accordion_button.previous {
 
 #header {
   padding-top: 20px;
-  background-color: #efefef;
+  padding-bottom: 20px;
 }
 
 .logged-in.not-front #header {
@@ -271,7 +311,6 @@ div.accordion_button.previous {
 
   img {
     vertical-align: bottom;
-    max-width: 13em;
   }
 }
 
@@ -287,10 +326,10 @@ div.accordion_button.previous {
   font-size: 1.5em;
   line-height: 1.5em;
   font-weight: normal;
-  color: #5A5B5D;
+  //color: #5A5B5D;
   a:link,
   a:visited {
-    color: #5A5B5D;
+    //color: #5A5B5D;
     text-decoration: none;
   }
 
@@ -319,7 +358,7 @@ div.accordion_button.previous {
   background: none !important;
   margin-left: auto;
   margin-right: auto;
-  max-width: 990px;
+  max-width: 1600px;
 }
 
 /*
@@ -333,7 +372,7 @@ div.accordion_button.previous {
   padding: 1.5em 1em;
   margin-left: auto;
   margin-right: auto;
-  max-width: 990px;
+  max-width: 1600px;
 }
 
 .front #content {
@@ -388,7 +427,7 @@ h2.title, /* Comment section heading */
 h2.comment-form, /* Comment form heading */
 h3.title { /* Comment title */
   margin: 0;
-  color: #5A5B5D !important;
+  //color: #5A5B5D !important;
 }
 
 tr.even { /* Some tables have rows marked even or odd. */
@@ -465,7 +504,7 @@ span.field-label { /* The inline field label used by the Fences module */
 ul.pager li.pager-current {
   background: none repeat scroll 0 0 #CCCECF;
   border: 1px solid #419845;
-  color: #5A5B5D;
+  //color: #5A5B5D;
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
@@ -495,9 +534,6 @@ ul.pager li.pager-current {
  * (see the layout.css file.)
  */
 
-.region-sidebar-first {
-  font-size: 80%;
-}
 
 /*
  * Second sidebar (on right in LTR languages, on left in RTL)
@@ -519,10 +555,10 @@ ul.pager li.pager-current {
   background-color: #efefef;
 }
 
-.f-wrapper {
+.f-wrapper, #block-menu-menu-footer-menu{
   margin-left: auto;
   margin-right: auto;
-  max-width: 990px;
+  max-width: 1600px;
 }
 
 /*

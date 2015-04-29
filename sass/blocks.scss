@@ -7,7 +7,7 @@
 
 .block { /* Block wrapper */
   margin-bottom: 1.1em;
-
+  width: 100%;
   &.first { /* The first block in the region */
   }
 
@@ -21,7 +21,6 @@
   }
 
   h2.block-title { /* Block title */
-    border-bottom: 2px solid #419845;
     font-family: 'Ropa Sans';
   }
 }
@@ -37,9 +36,8 @@
   }
 }
 
-
-.front h2.block-title {
-    border-bottom: 1px solid #ccc;
+h2.block-title {
+    border-bottom: none;
     font-weight: normal;
     padding: 0.5em 0 0.9em;
     margin-bottom: 0.9em;
@@ -56,10 +54,26 @@
  *
 **/
 #block-islandora-solr-simple {
-  float: right;
-  width: 40%;
   margin-bottom: 1.5em;
 }
+
+.block-islandora-usage-stats{
+  float: left;
+  padding-left: 10px;
+  .item-list{
+    .list-group{
+      li{
+        padding-top: 5px;
+        padding-bottom: 5px;
+        list-style: none;
+        a{
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
 .image-block-front,
 .submit-collection-anon, .submit-collection, .welcome {
   background: #fff;
@@ -71,6 +85,49 @@
   padding: 10px;
   box-shadow:  0px 0px 5px 1px rgba(38, 37, 38, 0.3);
     -webkit-box-shadow:  0px 0px 5px 1px rgba(38, 37, 38, 0.5);
+}
+
+.recent-object-item-wrapper{
+  float: left;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  display: table;
+  a{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 5px;
+    img{
+      max-width: 5em;
+    }
+  }
+}
+
+#block-islandora-solr-simple {
+  display: inline-block;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.islandora-simple-search{
+  border-bottom: 1px solid black;
+}
+.front-page-new-collections{
+  border-bottom: 1px solid black;
+}
+
+.front-page-browse-all-collections{
+  width: 100%;
+  .view-frontpage-solr-boxes{
+    .view-content{
+      table {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.5em;
+        table-layout: fixed;
+        width: 100%;
+      }
+    }
+  }
 }
 
 .welcome {
@@ -94,51 +151,20 @@
   margin-bottom: 1.4em;
 }
 
-#block-views-frontpage-solr-boxes-block-1, #block-views-frontpage-solr-boxes-block-2,
-#block-views-frontpage-solr-boxes-block-3 {
-  float: left;
-  background: #fff;
-  float: left;
-  padding: 15px;
-  box-shadow:  0px 0px 5px 1px rgba(38, 37, 38, 0.3);
-    -webkit-box-shadow:  0px 0px 5px 1px rgba(38, 37, 38, 0.5);
-}
-#block-views-frontpage-solr-boxes-block-2 {
-  margin-right: none !important;
-}
-#block-views-frontpage-solr-boxes-block-1 {
-  .views-row {
-    float: left;
-    max-width: 47%;
-    padding: 1em 1em 1em 0;
-  }
-  h3 {
-    margin-bottom: 0.5em;
-    font-size: 95%;
-  }
-  .views-field-dcdescription span {
-    margin-top: 0;
-    margin-bottom: 2em;
-    font-size: 90%;
-    line-height: 1.4em;
-  }
-  img {
-    float: left;
-    width: 115px;
-    height: 115px;
-    padding-right: 10px;
-  }
-  a {
-    color: #3D8396;
-    font-size: 100%;
-    font-weight: bold;
-  }
-}
-
 #block-views-top-site-searches-block, #block-views-top-facet-searches-block {
   table {
     width: 100%;
   }
+}
+
+.views-field.views-field-dcdescription {
+  bottom: 5px;
+  position: absolute;
+  color: white;
+  background-color: black;
+  opacity: 0.5;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .block-islandora-solr {
@@ -218,6 +244,34 @@
 #block-menu-menu-header-menu {
   line-height: 0.3em !important;
   height: 30px;
+  width: 100%;
+}
+
+.header-text-logo{
+  margin-bottom: 0px;
+}
+
+#block-views-social-links-block {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 996px;
+  width: 100%;
+  table{
+    width: 100%;
+    div.field-content{
+      text-align: center;
+    }
+  }
+}
+
+.footer-center{
+  .field-item{
+    //text-align: center;
+  }
+}
+
+.footer-left{
+  padding-top: 2em;
 }
 
 /**

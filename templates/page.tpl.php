@@ -139,22 +139,17 @@
       <?php print render($page['navigation']); ?>
 
     </div><!-- /#navigation -->
+    <?php print render($page['highlighted']); ?>
   <div id="main">
 
     <?php print $breadcrumb; ?>
     <div id="content" class="column" role="main">
-      <?php print render($page['highlighted']); ?>
       <a id="main-content"></a>
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
         <h1 class="title" id="page-title"><?php print $title; ?></h1>
       <?php endif; ?>
       <?php print render($title_suffix); ?>
-      <?php if ($obj_social): ?>
-      <div class="social-share-outer">
-        <?php print($obj_social);?>
-      </div>
-      <?php endif; ?>
       <?php print $messages; ?>
       <?php print render($tabs); ?>
       <?php print render($page['help']); ?>
@@ -182,7 +177,7 @@
   </div><!-- /#main -->
 
   <?php print render($page['footer']); ?>
-
+  <?php print render($page['bottom']); ?>
 </div><!-- /#page -->
 
-<?php print render($page['bottom']); ?>
+

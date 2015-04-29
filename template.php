@@ -186,12 +186,11 @@ function tul_theme_islandora_solr_query_alter($islandora_solr_query) {
  * Implements hook_form_alter().
  */
 function tul_theme_block_view_islandora_usage_stats_recent_activity_alter(&$data, $block) {
-  $pids = explode(" ", $data['content']['#attributes']['data-pids'][0]);
-  $pids = array_values(array_filter($pids));
-  reset($pids);
   foreach($data['content']['#items'] as $key => $value) {
-    $pid = $pids[$key];
-    $new_content = "<div class='new-collections-item-wrapper popular-resources'><a href='/islandora/object/$pid'><img src='/islandora/object/$pid/datastream/TN/view'></img></a>" . $data['content']['#items'][$key]['data'] . "</div>";
+    $pid = $value['data-pid'];
+    $new_content = "<div class='new-collections-item-wrapper popular-resources'><a href='/islandora/object/$pid'>"
+      . "<img src='/islandora/object/$pid/datastream/TN/view'></img></a>"
+      . $data['content']['#items'][$key]['data'] . "</div>";
     $data['content']['#items'][$key]['data'] = $new_content;
   }
 }

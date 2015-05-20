@@ -55,6 +55,10 @@ a.button { /* Buttons used by contrib modules like Media */
   @include appearance(button);
 }
 
+.more-link{
+  padding-right: 20px;
+}
+
 /**
  * @Islandora Blocks
  *
@@ -68,7 +72,7 @@ a.button { /* Buttons used by contrib modules like Media */
     color: #808184;
     height: 1.9em;
     padding-left: 0.5em;
-    width: 100%;
+    width: 96%;
   }
   .form-submit {
     background: url("../images/search_btn.png") no-repeat scroll 0 0 transparent;
@@ -87,19 +91,23 @@ a.button { /* Buttons used by contrib modules like Media */
 .collection-search-wrapper {
   background-color: #032a17;
   border-radius: 5px;
-  min-height: 45px;
+  min-height: 36px;
   margin-bottom: 10px;
   verticle-align: middle;
   #islandora-collection-search-form{
     margin: 10px;
     padding-top: 8px;
     #edit-submit{
-      display: none;
+      /*display: none;*/
     }
     #edit-simple{
+      #edit-submit{
+        width: auto;
+        float: right;
+      }
       div.form-item-collection-select{
         select{
-          width: 50%;
+          width: 35%;
         }
       }
       div.form-item-islandora-simple-search-query{
@@ -108,9 +116,8 @@ a.button { /* Buttons used by contrib modules like Media */
           border-radius: 7px 7px 7px 7px;
           box-shadow: 0 3px 3px -3px #808184;
           color: #808184;
-          height: 1.9em;
           padding-left: 0.5em;
-          width: 45%;
+          width: 35%;
         }
       }
     }

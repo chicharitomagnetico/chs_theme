@@ -115,6 +115,20 @@ function tul_theme_preprocess_page(&$variables) {
 }
 
 /**
+ * Implements hook_page_alter().
+ */
+function tul_theme_page_alter(&$variables) {
+  $object = menu_get_object('islandora_object', 2);
+  if (!in_array("islandora:collectionCModel", $object->models)) {
+    $region_name = 'sidebar_first';
+    $block_name = 'menu_menu-quick-links';
+    if (isset($variables[$region_name][$block_name])) {
+      $variables[$region_name][$block_name]['#access'] = FALSE;
+    }
+  }
+}
+
+/**
  * Implements hook_form_alter().
  */
 function tul_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {
@@ -122,6 +136,7 @@ function tul_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_s
     '#markup' => l(t("Advanced Search"), "advanced-search", array('attributes' => array('class' => array('adv_search')))),
   );
   $form['simple']['advanced_link'] = $link;
+  $form['simple']['islandora_simple_search_query']['#attributes']['placeholder'] = t("Search Repository");
 }
 
 /**
@@ -149,6 +164,13 @@ function tul_theme_preprocess_islandora_basic_collection_grid(&$variables) {
 }
 
 /**
+ * Implements hook_menu_tree().
+ */
+function tul_theme_menu_tree__menu_site_navigation($variables) {
+  return '<ul class="menu primary-nav">' . $variables['tree'] . '</ul>';
+}
+
+/**
  * Implements hook_preprocess().
  */
 function tul_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
@@ -156,13 +178,6 @@ function tul_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
     $block = module_invoke('islandora_collection_search', 'block_view', 'islandora_collection_search');
     $variables['islandora_collection_search_block'] = render($block['content']);
   }
-}
-
-/**
- * Implements hook_block_view_MODULE_DELTA_alter().
- */
-function tul_theme_block_view_islandora_solr_simple_alter(&$data, $block) {
-  drupal_add_js(drupal_get_path('theme', 'tul_theme') . '/js/clean_simple_search.js');
 }
 
 /**
@@ -186,12 +201,11 @@ function tul_theme_islandora_solr_query_alter($islandora_solr_query) {
  * Implements hook_form_alter().
  */
 function tul_theme_block_view_islandora_usage_stats_recent_activity_alter(&$data, $block) {
-  $pids = explode(" ", $data['content']['#attributes']['data-pids'][0]);
-  $pids = array_values(array_filter($pids));
-  reset($pids);
   foreach($data['content']['#items'] as $key => $value) {
-    $pid = $pids[$key];
-    $new_content = "<div class='new-collections-item-wrapper popular-resources'><a href='/islandora/object/$pid'><img src='/islandora/object/$pid/datastream/TN/view'></img></a>" . $data['content']['#items'][$key]['data'] . "</div>";
+    $pid = $value['data-pid'];
+    $new_content = "<div class='new-collections-item-wrapper popular-resources'><a href='/islandora/object/$pid'>"
+      . "<img src='/islandora/object/$pid/datastream/TN/view'></img></a>"
+      . $data['content']['#items'][$key]['data'] . "</div>";
     $data['content']['#items'][$key]['data'] = $new_content;
   }
 }

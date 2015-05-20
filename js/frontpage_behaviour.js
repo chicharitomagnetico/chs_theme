@@ -6,7 +6,7 @@
  * fix the overflow from the admin menu, if it is present.
  */
 (function ($) {
-Drupal.behaviors.gal_theme_carousel = {
+Drupal.behaviors.flexslider_theme_carousel = {
   attach: function (context, settings) {
 
     var $window = $(window);
@@ -14,8 +14,8 @@ Drupal.behaviors.gal_theme_carousel = {
     var $window = $(window);
 
     function getGridSize() {
-      return (window.innerWidth < 600) ? 2 :
-        (window.innerWidth < 900) ? 3 : 6;
+      return (window.innerWidth < 600) ? 1 :
+        (window.innerWidth < 900) ? 1 : 1;
     }
 
     function update_header_position() {
@@ -34,10 +34,12 @@ Drupal.behaviors.gal_theme_carousel = {
 
     $(window).resize(function() {
       update_header_position();
-      fixItemCount();
+      console.log($(window).width());
+      //fixItemCount();
     });
-
-    fixItemCount();
+    //fixItemCount();
+    $(window).trigger('resize');
+    $('.flexslider').height('100%');
   }
 };
 })(jQuery);

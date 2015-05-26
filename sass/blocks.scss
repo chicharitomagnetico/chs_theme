@@ -113,6 +113,13 @@ h2.block-title {
     -webkit-box-shadow:  0px 0px 5px 1px rgba(38, 37, 38, 0.5);
 }
 
+.islandora-solr-facet-pages-list{
+  list-style-type: none;
+  li{
+    padding-left: 15% !important;
+  }
+}
+
 .recent-object-item-wrapper{
   padding-bottom: 5px;
   padding-top: 5px;

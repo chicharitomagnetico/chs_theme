@@ -188,6 +188,9 @@ p.flex-caption {
   }
 }
 
+.islandora-solr-facet-pages-wrapper{
+  padding-left: 20px;
+}
 
 .front{
   #edit-islandora-simple-search-query{
@@ -195,8 +198,6 @@ p.flex-caption {
     width: 96% !important;
   }
 }
-
-
 
 .islandora-default-thumb {
   @extend .collection_folder;

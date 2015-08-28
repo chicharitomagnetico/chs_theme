@@ -165,15 +165,20 @@ p.flex-caption {
     overflow: hidden;
     img {
       display: inline-block;
-      height: auto;
-      max-height: 30em;
+      width: 100%;
     }
   }
 }
+
+.views-field-PID {
+  max-height: 30em;
+  overflow: hidden;
+}
+
 .slideshow-item-image-wrapper {
   text-align: center;
 }
-  
+
 .collection_folder {
   background-image: url("../images/folder.png");
   background-repeat: no-repeat;
@@ -406,7 +411,7 @@ div.accordion_button.previous {
 }
 
 .front #content {
-  padding: 0; 
+  padding: 0;
   background: none;
   box-shadow: none;
 }

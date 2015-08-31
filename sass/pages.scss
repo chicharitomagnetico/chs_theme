@@ -156,8 +156,9 @@ p.flex-caption {
 }
 
 .flexslider {
+  border: none !important;
   height: auto;
-  margin-bottom: 40px;
+  margin-bottom: 0px;
   a{
     display: inherit;
   }
@@ -605,6 +606,10 @@ ul.pager li.pager-current {
 
 .frontpage-slideshow-block{
   /*max-width: $width_limit;*/
+}
+
+.flex-control-nav.flex-control-paging {
+  display: none;
 }
 
 /*

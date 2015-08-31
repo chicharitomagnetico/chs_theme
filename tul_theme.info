@@ -84,6 +84,10 @@ settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 1
 settings[zen_wireframes]           = 0
 
+; Tulane custom theme settings.
+settings[tul_theme_background_image_datastream] = TN
+settings[tul_theme_slideshow_height]            = 400
+
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.
 

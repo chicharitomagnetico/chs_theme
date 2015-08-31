@@ -28,6 +28,10 @@ $oak-leaf:        #006633;
 $active:          $gold;
 $hover:           $gold;
 
+// Page variables.
+$width_limit:     100%;
+$left_padding:    1em;
+$right_padding:   1em;
 
 // a 'color' was set to "$fountainbleu", but is not defined"
 a {
@@ -35,9 +39,7 @@ a {
   //display: inline-block;
   word-wrap: break-word;
   text-decoration:none;
-  font-family: $base-font-family;
   &:hover{
-    @include transition(all 0.2s ease-in-out);
     color: $active;
   }
 }
@@ -48,15 +50,12 @@ h1,h2,h3,h4,h5,h6 {
   word-wrap:break-word;
   margin: 0;
   text-shadow: 1px 1px 1px rgba(0,0,0,.15);
-  @include text-shadow(rgba(#000, 0.2) 1px 1px 1px);
-  font-family: $base-font-family;
 }
 h1 {
   //@include adjust-font-size-to(64px);
-  font-family: $base-font-family;
   font-weight: 700;
   font-style: normal;
-}
+}  
 
 h2 {
   //@include adjust-font-size-to(52px);

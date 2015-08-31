@@ -22,13 +22,11 @@ stylesheets[all][] = sass-css/forms.css
 stylesheets[all][] = sass-css/fields.css
 stylesheets[all][] = sass-css/print.css
 stylesheets[all][] = sass-css/layouts/front-layout.css
-
 stylesheets[all][] = css/tabs.css
 
 ; Set the conditional stylesheets that are processed by IE.
 stylesheets-conditional[IE 8][all][] = css/ie8.css
 
-scripts[] = js/script.js
 scripts[] = js/frontpage_behaviour.js
 
 regions[sub_header]     = Sub Header
@@ -48,8 +46,6 @@ regions[bottom]         = Page bottom
 
 regions[page_top]       = Page top
 regions[page_bottom]    = Page bottom
-
-
 
 ; Various page elements output by the theme can be toggled on and off. The
 ; "features" control which of these check boxes display on the

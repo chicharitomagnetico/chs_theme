@@ -28,7 +28,7 @@
       class="frontpage-slideshow-image-background"
       style="background: url('/islandora/object/<?php print urlencode($output); ?>/datastream/<?php print theme_get_setting('tul_theme_background_image_datastream'); ?>/view') no-repeat center center;
       background-size: cover;
-      height: <?php print theme_get_setting('tul_theme_slideshow_height'); ?>px;
+      height: 400px;
       width: 100%;">
     </div>
   </a>

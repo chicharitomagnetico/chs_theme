@@ -31,10 +31,4 @@ function tul_theme_form_system_theme_settings_alter(&$form, &$form_state, $form_
     '#default_value' => theme_get_setting('tul_theme_background_image_datastream'),
     '#description' => t("Set the default background image datastream used in the front page slideshow. Defaults to 'TN'."),
   );
-  $form['tul_theme_custom']['tul_theme_slideshow_height'] = array(
-    '#type' => 'textfield',
-    '#title' => t('Frontpage Slideshow Image height'),
-    '#default_value' => theme_get_setting('tul_theme_slideshow_height'),
-    '#description' => t("Set the default height of the background image used in the frontpage slideshow. Defaults to 400px."),
-  );
 }

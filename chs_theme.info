@@ -1,5 +1,5 @@
 screenshot  = screenshot.png
-name        = Tulane Theme
+name        = CHS Theme
 description = Read the <a href="http://drupal.org/node/873778">online docs</a> or the included README.txt on how to create a theme with Zen.
 core        = 7.x
 base theme  = zen
@@ -22,6 +22,8 @@ stylesheets[all][] = sass-css/forms.css
 stylesheets[all][] = sass-css/fields.css
 stylesheets[all][] = sass-css/print.css
 stylesheets[all][] = sass-css/layouts/front-layout.css
+stylesheets[all][] = sass-css/header_responsive.css
+stylesheets[all][] = sass-css/footer_responsive.css
 stylesheets[all][] = css/tabs.css
 
 ; Set the conditional stylesheets that are processed by IE.
@@ -80,8 +82,9 @@ settings[zen_html5_respond_meta][] = meta
 settings[zen_rebuild_registry]     = 1
 settings[zen_wireframes]           = 0
 
-; Tulane custom theme settings.
-settings[tul_theme_background_image_datastream] = JPG
+; CHS custom theme settings.
+settings[chs_theme_background_image_datastream] = JPG
+settings[chs_theme_collection_search]           = 0
 
 ; To make this sub-theme an admin theme with shortcut links next to titles,
 ; uncomment the line below.

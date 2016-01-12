@@ -1,0 +1,24 @@
+/**
+ * @file
+ * Block Styling
+ */
+@import "base";
+@import "zen";
+
+$zen-column-count:  1;
+$zen-gutter-width:  20px;
+@media all and (max-width: 755px) {
+  .h-wrapper{
+    @include zen-clear();
+    @include zen-grid-container;
+    #logo{
+      @include zen-grid-item(1, 1);
+      @include zen-clear();
+      max-width: 100%;
+    }
+    #name-and-slogan{
+    @include zen-clear();
+      @include zen-grid-item(1, 1);
+    }
+  }
+}

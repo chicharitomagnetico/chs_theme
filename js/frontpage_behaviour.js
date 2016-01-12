@@ -34,8 +34,6 @@ Drupal.behaviors.flexslider_theme_carousel = {
 
     $(window).resize(function() {
       update_header_position();
-      console.log($(window).width());
-      //fixItemCount();
     });
     //fixItemCount();
     $(window).trigger('resize');

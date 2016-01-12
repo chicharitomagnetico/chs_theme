@@ -26,7 +26,7 @@
   <a href="/islandora/object/<?php print $output; ?>">
     <div
       class="frontpage-slideshow-image-background"
-      style="background: url('/islandora/object/<?php print urlencode($output); ?>/datastream/<?php print theme_get_setting('tul_theme_background_image_datastream'); ?>/view') no-repeat center center;
+      style="background: url('/islandora/object/<?php print urlencode($output); ?>/datastream/<?php print theme_get_setting('chs_theme_background_image_datastream'); ?>/view') no-repeat center center;
       background-size: cover;
       height: 400px;
       width: 100%;">

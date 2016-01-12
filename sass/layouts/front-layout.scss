@@ -16,15 +16,15 @@ $zen-gutter-width: 20px;
   @include zen-grid-container;
 }
 
-#logo {
-  @include zen-grid-item(1, 1);
-}
+/* #logo { */
+/*   @include zen-grid-item(1, 1); */
+/* } */
 
-#name-and-slogan {
-  @include zen-grid-item(2, 2);
-  font-size: 4em;
-  padding-top: 10px;
-}
+/* #name-and-slogan { */
+/*   @include zen-grid-item(2, 2); */
+/*   font-size: 4em; */
+/*   padding-top: 10px; */
+/* } */
 
 
 
@@ -37,6 +37,7 @@ $zen-gutter-width: 20px;
 }
 
 #footer{
+  box-shadow: 0px 0px 10px #cdcccc;
   @include zen-clear();
   @include zen-grid-container;
   $zen-column-count: 3;
@@ -56,13 +57,16 @@ $zen-gutter-width: 20px;
       display: block;
     }
   }
-  .footer-right{
-    @include zen-grid-item(1, 3);
-    color: white;
-  }
   .footer-left{
     @include vertical-align();
     display: block;
+  }
+}
+
+.bottom-wrapper{
+  ul.menu{
+    margin-bottom: .5em;
+    margin-top: .5em;
   }
 }
 
@@ -71,9 +75,9 @@ $zen-gutter-width: 20px;
   @include zen-grid-container;
   $zen-column-count: 3;
   $zen-gutter-width: 20px;
-  background-color: #363636;
   .block{
     margin-bottom: 0px;
+    width: auto;
   }
   .bottom-place-one {
     @include zen-grid-item(1, 1);
@@ -130,16 +134,16 @@ $zen-gutter-width: 20px;
     text-align: center;
   }
 
-  #logo {
-    @include zen-grid-item(3, 1);
-  }
+/*   #logo { */
+/*     @include zen-grid-item(3, 1); */
+/*   } */
   #site-slogan{
     text-align: center;
   }
-  #name-and-slogan {
-  @include zen-clear();
-    @include zen-grid-item(3, 1);
-  }
+/*   #name-and-slogan { */
+/*   @include zen-clear(); */
+/*     @include zen-grid-item(3, 1); */
+/*   } */
  
 }
 
@@ -192,17 +196,6 @@ $zen-gutter-width: 20px;
       @include vertical-align();
     }
   }
- .footer-right{
-    @include zen-clear();
-    @include zen-grid-item(1, 1);
-    color: white;
-    padding-top: 3em;
-    text-align: center;
-    .field-item{
-      display: block;
-      @include vertical-align();
-    }
-  }
 }
 
 .bottom-wrapper{
@@ -213,6 +206,7 @@ $zen-gutter-width: 20px;
   background-color: #363636;
   .block{
     margin-bottom: 0px;
+    width: auto;
   }
   .bottom-place-one {
     @include zen-grid-item(1, 1);

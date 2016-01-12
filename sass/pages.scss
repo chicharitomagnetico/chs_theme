@@ -10,7 +10,22 @@
 @import "base";
 @import "_variables";
 
-.region-header {
+body{
+  font-size: 12pt;
+}
+
+footer, #bottom{
+  font-size: 10pt;
+}
+
+.islandora-basic-collection-grid {
+  text-align: center;
+}
+
+.page-all-collections{
+  #content table.views-view-grid{
+    table-layout: fixed;
+  }
 }
 
 /*
@@ -33,7 +48,7 @@
 }
 
 html {
-    font-family: 'Open Sans',helvetica,airal,sans-serif;
+    font-family: $base-font-family;
 }
 #page {
     background: #FFFFFF;
@@ -58,9 +73,10 @@ html {
     box-shadow: none!important;
 }
 .breadcrumb {
-    font-size: .95em;
-    letter-spacing: 1.2pt;
-    line-height: 1.1em;
+  font-family: "Trade Gothic LT Condensed";
+  font-size: .95em;
+  letter-spacing: 1.2pt;
+  line-height: 1.1em;
 }
 #footer menu, ol, ul{
     padding: 0 0 0 0;
@@ -101,6 +117,7 @@ nav {
   background: none !important;
   font-weight: normal;
   color:$gold !important;
+  margin-top: 0.5em;
 }
 
 .region.region-highlighted {
@@ -178,7 +195,7 @@ p.flex-caption {
 
 #block-tuladora-collection-description div.islandora-solr-metadata-sidebar h2 {
   font-weight: normal;
-  font-family: "Ropa Sans";
+/*   font-family: "Ropa Sans"; */
   margin-bottom: 0.3em;
   padding: 0.5em 0 0;
 }
@@ -221,10 +238,11 @@ p.flex-caption {
   }
 }
 
-.view-content{
-  table {
-    width: 100%;
-    table-layout: fixed;
+.view-social-links{
+  .view-content{
+    table {
+      width: 100%;
+    }
   }
 }
 
@@ -262,7 +280,7 @@ div.widgets-element-horizontal {
 
 .block-border-bottom, #content{
   display: inline-block;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #cdcccc;
   box-sizing: border-box;
   padding-bottom: 10px;
 }
@@ -307,10 +325,10 @@ dl.solr-thumb {
 #navigation{
   display: table;
   width: 100%;
+  box-shadow: 0px 0px 13px #cdcccc;
   >div{
     float:right;
   }
-  background-color:$tulane-green;
 }
 
 .region.region-navigation{
@@ -345,22 +363,39 @@ div.accordion_button.previous {
   padding-top: 1.25em;
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  margin: 0;
-  padding: 0;
+/* #logo { Wrapping link for logo */
+/*   float: left; LTR */
+/*   margin: 0; */
+/*   padding: 0; */
 
-  img {
-    vertical-align: bottom;
+/*   img { */
+/*     vertical-align: bottom; */
+/*   } */
+/* } */
+
+.h-wrapper{
+  #logo {
+    display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
+    img{
+      width: 180px;
+      max-width: 180px;
+    }
+  }
+  hgroup {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
   }
 }
-
-#name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
-  margin-left: 2%;
-  margin-top: -0.2em;
-  background: transparent;
-}
+/* #name-and-slogan { Wrapper for website name and slogan */
+/*   float: left; */
+/*   margin-left: 2%; */
+/*   margin-top: -0.2em; */
+/*   background: transparent; */
+/* } */
 
 #site-name { /* The name of the website */
   margin: 0;
@@ -382,10 +417,13 @@ div.accordion_button.previous {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
-  color: white;
+  font-size: 24pt;
   font-weight: normal;
-  text-align: right;
+  text-align: left;
+}
+
+#page-title, h1, h2, h3, h4, h5, h6{
+  font-size: 16pt;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -560,10 +598,14 @@ span.field-label { /* The inline field label used by the Fences module */
   }
 }
 
-ul.pager li.pager-current {
-  background: none repeat scroll 0 0 #CCCECF;
-  border: 1px solid #419845;
-  //color: #5A5B5D;
+.page-all-collections{
+  table.views-view-grid{
+    width: 100%;
+  }
+}
+
+.browse-all-item-wrapper {
+  text-align: center;
 }
 
 .feed-icon { /* The link to the RSS or Atom feed for the current list of content */
@@ -576,6 +618,16 @@ ul.pager li.pager-current {
   padding-top: 1.5em;
 }
 
+
+.islandora-solr-search-result{
+  -webkit-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.29);
+  -moz-box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.29);
+  box-shadow: 0px 0px 12px 4px rgba(0,0,0,0.29);
+  background-color: white;
+  box-sizing: border-box;
+  padding: 5px;
+
+}
 .islandora-pdf-link {
   float: right;
 }
@@ -618,13 +670,22 @@ ul.pager li.pager-current {
 
 #footer {
   margin-top: 1.8em;
-  background-color: #efefef;
+  a {
+    color: $gold;
+  }
+  p, h2{
+    color: #58595B;
+  }
+  .field-content > p {
+    font-size: 10pt;
+  }
 }
 
 .f-wrapper, #block-menu-menu-footer-menu{
+  display: table;
   margin-left: auto;
   margin-right: auto;
-  max-width: $width_limit;
+  width: 100%;
 }
 
 /*

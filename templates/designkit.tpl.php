@@ -32,6 +32,10 @@ body.designkit {
       background: <?php print $sidebars?>;	
 }
 
+#bottom {
+  background-color: <?php print $bottom?>;
+}
+
 #page-title {
   background: <?php print designkit_colorshift($background, '#000000', .1) ?>;
   color: <?php print (designkit_colorhsl($background, 'l') > .5) ? '#fff' : '#000' ?>;

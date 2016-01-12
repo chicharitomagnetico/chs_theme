@@ -72,6 +72,41 @@ $zen-auto-include-item-base: false;
 
 } // End of @if $zen-reverse-all-floats == true
 
+@media all and (max-width: 755px) {
+  ul.primary{
+    border-bottom: none !important;
+  }
+  ul.primary li, ul.secondary li{
+    float: none !important;
+  }
+  ul.primary li{
+    border-bottom-color: #bbbbbb !important;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
+    border-bottom-left-radius: 4px !important;
+    border-bottom-right-radius: 4px !important;
+  }
+  #navigation{
+    text-align: center;
+    >div{
+      float: none;
+    }
+  }
+  .islandora-basic-collection{
+    text-align: center;
+    .islandora-basic-collection-display-switch{
+      float: none;
+    }
+  }
+  #content{
+    width: 100%;
+    text-align: center;
+  }
+  #site-slogan{
+    font-size: 20pt !important;
+  }
+}
+
 /**
  * Use 3 grid columns for smaller screens.
  */

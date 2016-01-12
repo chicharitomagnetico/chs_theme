@@ -1,0 +1,42 @@
+/**
+ * @file
+ * Block Styling
+ */
+@import "base";
+@import "zen";
+
+$zen-column-count:  1;
+$zen-gutter-width:  20px;
+@media all and (max-width: 755px) {
+  .f-wrapper{
+    @include zen-clear();
+    @include zen-grid-container;
+    > div{
+      @include zen-grid-item(1, 1);
+      @include zen-clear();
+      text-align: center;
+    }
+    div#block-views-hours-block{
+      td{
+        display: block;
+      }
+    }
+    .block{
+      width: 100%;
+    }
+  }
+  
+  .bottom{
+    >div{
+      text-align: center;
+      float: none;
+    }
+  }
+  .bottom-wrapper .block{
+    float: none;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+}

@@ -34,6 +34,9 @@ ul li.leaf {
 /*
  * Navigation bar
  */
+#navigation, #block-menu-menu-header-menu{
+  font-family: "Trade Gothic LT Condensed";
+}
 
 #navigation {
   .block {
@@ -72,20 +75,20 @@ text-align: center;
 #navigation ul.menu li a{
   text-decoration: none;
   display: inline-block;
-  height: 30px;
+  height: 20px;
   padding: 0em 1em;
-  color: #fff;
-  background-color: #255302;
+  color: black;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 #navigation ul li a:hover{
-  color: #c46e18 !important;
-  background-color: #032a17;
+  color: $gold;
   line-height: 20px;
 }
 
 .region-sub-header {
+  box-shadow: 0px 0px 13px #cdcccc;
   height: 25px;
   margin-top: 0px;
   margin-left: 0px !important;
@@ -141,12 +144,13 @@ text-align: center;
     float:left;
     width: 100%;
     li:hover >a,li.active > a{
-      color: #c46e18 !important;
+      color: $gold !important;
       background-color: rgba(0, 0, 0, 0.4);
     }
     li {
       display: inline-block; 
       margin: 0 0.8em;
+      margin-top: 3px;
       a{
         padding-left: 2px;
         padding-right: 2px;
@@ -157,13 +161,13 @@ text-align: center;
         height:20px;
         line-height: 20px;
         :hover {
-          color: #c46e18;
+          color: $gold;
           background: c46e18;
           background: -webkit-gradient(linear,left top,left bottom,from(rgba(155,155,155,0.05)),to(rgba(55,55,55,0.05)));
           background: -moz-linear-gradient(top,rgba(155,155,155,0.05),rgba(55,55,55,0.05));
         }
         .current, .current:hover {
-          color: #c46e18;
+          color: $gold;
           background: white;
           background: -webkit-gradient(linear,left top,left bottom,from(rgba(160,160,160,0.05)),to(rgba(60,60,60,0.05)));
           background: -moz-linear-gradient(top,rgba(168,168,168,0.05),rgba(69,69,69,0.05));

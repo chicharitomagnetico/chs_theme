@@ -67,7 +67,7 @@ a.button { /* Buttons used by contrib modules like Media */
 #block-islandora-solr-simple {
   .form-text {
     border: 1px solid #ccc;
-    border-radius: 7px 7px 7px 7px;
+    border-radius: 3px 3px 3px 3px;
     box-shadow: 0 3px 3px -3px #808184;
     color: #808184;
     height: 1.9em;
@@ -82,14 +82,13 @@ a.button { /* Buttons used by contrib modules like Media */
     position: relative;
     float: right;
     clear: right;
-    right: 5px;
-    top: -28px;
+    right: 0px;
+    top: -27px;
     width: 25px;
   }
 }
 
 .collection-search-wrapper {
-  background-color: #032a17;
   border-radius: 5px;
   min-height: 36px;
   margin-bottom: 10px;

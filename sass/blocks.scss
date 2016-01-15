@@ -211,13 +211,14 @@ h2.block-title {
   }
 }
 
-.views-field.views-field-dcdescription {
+.info-content-wrapper {
   bottom: 5px;
   position: absolute;
   color: white;
   background-color: #58595B;
-  padding-left: 10px;
-  padding-right: 10px;
+  div {
+    display: inline-block;
+  }
 }
 
 .block-islandora-solr {

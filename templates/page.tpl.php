@@ -114,7 +114,6 @@
 
   </header>
     <div id="navigation">
-
       <?php if ($main_menu): ?>
         <nav id="main-menu" role="navigation">
           <?php

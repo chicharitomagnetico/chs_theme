@@ -12,6 +12,22 @@
   <?php if (isset($islandora_collection_search_block)): ?>
     <div class="collection-search-wrapper"><?php print $islandora_collection_search_block; ?></div>
   <?php endif; ?>
+  <?php if ($display_metadata): ?>
+    <div class="islandora-collection-metadata">
+      <?php print $description; ?>
+      <?php if ($parent_collections): ?>
+        <div>
+          <h2><?php print t('In collections'); ?></h2>
+          <ul>
+            <?php foreach ($parent_collections as $collection): ?>
+              <li><?php print l($collection->label, "islandora/object/{$collection->id}"); ?></li>
+            <?php endforeach; ?>
+          </ul>
+        </div>
+      <?php endif; ?>
+      <?php print $metadata; ?>
+    </div>
+  <?php endif; ?>
   <?php if (isset($islandora_object['OBJ'])): ?>
     <div class="islandora-basic-collection-image-obj-wrapper"><img src="/islandora/object/<?php print $islandora_object->id; ?>/datastream/OBJ/view"></img></div>
   <?php endif; ?>

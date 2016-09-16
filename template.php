@@ -49,6 +49,32 @@ function chs_theme_islandora_openseadragon_clipper(&$variables) {
 }
 
 /**
+ * Implements theme_menu_link().
+ */
+function chs_theme_menu_link(array $variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
+  }
+  if ($variables['theme_hook_original'] = 'menu_link__menu_chs_links' &&
+    $variables['element']['#title'] == t('Order Images & Permissions')) {
+    $object = menu_get_object('islandora_object', 2);
+    if (!is_null($object)) {
+      $cmodels = explode(',', theme_get_setting('chs_theme_order_images_permissions'));
+      foreach ($cmodels as $model) {
+        if (in_array($model, $object->models)) {
+          return '';
+        }
+      }
+    }
+  }
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+}
+
+/**
  * Implements hook_form_alter().
  */
 function chs_theme_form_islandora_solr_simple_search_form_alter(&$form, &$form_state, $form_id) {

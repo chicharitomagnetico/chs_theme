@@ -68,6 +68,8 @@ function chs_theme_menu_link(array $variables) {
           return '';
         }
       }
+    } else {
+      return '';
     }
   }
   $output = l($element['#title'], $element['#href'], $element['#localized_options']);

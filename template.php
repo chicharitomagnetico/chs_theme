@@ -110,6 +110,16 @@ function chs_theme_preprocess_islandora_basic_collection_grid(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess().
+ */
+function chs_theme_preprocess_islandora_solr_metadata_display(&$variables) {
+  $elevated = explode(",", theme_get_setting('chs_theme_elevated_collections'));
+  if (in_array($variables['islandora_object']->id, $elevated)) {
+    $variables['theme_hook_suggestions'][] = "islandora_solr_metadata_display__elevated_collections";
+  }
+}
+
+/**
  * Implements hook_menu_tree().
  */
 function chs_theme_menu_tree__menu_site_navigation($variables) {
@@ -123,6 +133,15 @@ function chs_theme_preprocess_islandora_basic_collection_wrapper(&$variables) {
   if (theme_get_setting('chs_theme_collection_search') && module_exists('islandora_collection_search')) {
     $block = module_invoke('islandora_collection_search', 'block_view', 'islandora_collection_search');
     $variables['islandora_collection_search_block'] = render($block['content']);
+  }
+
+  $variables['show_description'] = TRUE;
+  $show_description = theme_get_setting('chs_theme_elevated_collections_description');
+  if ($show_description) {
+    $elevated = explode(",", theme_get_setting('chs_theme_elevated_collections'));
+    if (!in_array($variables['islandora_object']->id, $elevated)) {
+      $variables['show_description'] = FALSE;
+    }
   }
 }
 

@@ -32,6 +32,16 @@ function chs_theme_page_alter(&$variables) {
 }
 
 /**
+ * Implement hook_preprocess().
+ */
+function chs_theme_preprocess_islandora_solr_search_navigation_block(&$variables) {
+  $variables['previous'] = $variables['prev_link'];
+  $variables['return'] = $variables['return_link'];
+  $variables['next'] = $variables['next_link'];
+}
+
+
+/**
  * Theme function to create a clipper link.
  */
 function chs_theme_islandora_openseadragon_clipper(&$variables) {

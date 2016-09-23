@@ -1,0 +1,21 @@
+/**
+ * @file
+ * Search Navigation Block Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+#block-islandora-solr-search-navigation,
+.search-navigation-block {
+  .islandora-solr-search-nav-content {
+    display: table;
+    width: 100%;
+
+    >div {
+      font-size: 35px;
+      display: table-cell;
+      text-align: center;
+    }
+  }
+}

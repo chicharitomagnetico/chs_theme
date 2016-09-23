@@ -22,6 +22,7 @@ function chs_theme_preprocess_page(&$variables) {
  */
 function chs_theme_page_alter(&$variables) {
   $object = menu_get_object('islandora_object', 2);
+  if (isset($object) && !is_null($object))
   if (!in_array("islandora:collectionCModel", $object->models)) {
     $region_name = 'sidebar_first';
     $block_name = 'menu_menu-quick-links';

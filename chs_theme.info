@@ -24,7 +24,9 @@ stylesheets[all][] = sass-css/print.css
 stylesheets[all][] = sass-css/layouts/front-layout.css
 stylesheets[all][] = sass-css/header_responsive.css
 stylesheets[all][] = sass-css/footer_responsive.css
+stylesheets[all][] = sass-css/search-navigation-block.css
 stylesheets[all][] = sass-css/search-navigation.css
+stylesheets[all][] = icons/fontello-search-nav/css/fontello.css
 stylesheets[all][] = css/tabs.css
 
 ; Set the conditional stylesheets that are processed by IE.

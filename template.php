@@ -133,6 +133,29 @@ function chs_theme_preprocess_islandora_solr_metadata_display(&$variables) {
 }
 
 /**
+ * Implements hook_preprocess().
+ */
+function chs_theme_process_islandora_solr_metadata_display(&$variables) {
+  $solr_fields = $variables['solr_fields'];
+
+  if (isset($solr_fields['mods_accessCondition_useAndReproduction_xlinkhref_ms']) && isset($solr_fields['mods_accessCondition_useAndReproduction_ms'])) {
+    // Take the xlink and node values and create an anchor out of them.
+    $link = reset($solr_fields['mods_accessCondition_useAndReproduction_xlinkhref_ms']['value']);
+    $value = reset($solr_fields['mods_accessCondition_useAndReproduction_ms']['value']);
+
+    $anchor = "<a href='$link'>$value</a>";
+
+    if (!empty($anchor)) {
+      $variables['solr_fields']['mods_accessCondition_useAndReproduction_ms']['value'] = array(
+        0 => $anchor,
+      );
+      // Unset as we don't need this value any longer.
+      unset($variables['solr_fields']['mods_accessCondition_useAndReproduction_xlinkhref_ms']);
+    }
+  }
+}
+
+/**
  * Implements hook_menu_tree().
  */
 function chs_theme_menu_tree__menu_site_navigation($variables) {

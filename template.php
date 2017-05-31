@@ -132,7 +132,7 @@ function chs_theme_preprocess_islandora_solr_metadata_display(&$variables) {
     $variables['theme_hook_suggestions'][] = "islandora_solr_metadata_display__elevated_collections";
   }
 
-  if (isset($variables['solr_fields']['mods_accessCondition_useAndReproduction_ms'])) {
+  if (isset($variables['solr_fields']['mods_accessCondition_rightsStatement_ms'])) {
     $variables['solr_fields']['mods_accessCondition_rightsStatement_xlinkhref_ms'] = array();
   }
 }
@@ -143,7 +143,7 @@ function chs_theme_preprocess_islandora_solr_metadata_display(&$variables) {
 function chs_theme_process_islandora_solr_metadata_display(&$variables) {
   $solr_fields = $variables['solr_fields'];
 
-  if (isset($solr_fields['mods_accessCondition_useAndReproduction_ms'])) {
+  if (isset($solr_fields['mods_accessCondition_rightsStatement_ms'])) {
     // Take the xlink and node values and create an anchor out of them.
     $link = reset($solr_fields['mods_accessCondition_rightsStatement_xlinkhref_ms']['value']);
     $text = reset($solr_fields['mods_accessCondition_rightsStatement_ms']['value']);

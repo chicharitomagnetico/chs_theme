@@ -7,6 +7,14 @@
 /**
  * Implements hook_preprocess_page().
  */
+function chs_theme_preprocess_islandora_book_book(&$variables) {
+  unset($variables['description']);
+  unset($variables['parent_collections']);
+}
+
+/**
+ * Implements hook_preprocess_page().
+ */
 function chs_theme_preprocess_page(&$variables) {
   $path = current_path();
   $path_array = explode("/", $path);

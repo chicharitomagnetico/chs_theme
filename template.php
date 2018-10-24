@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_preprocess_page().
+ * Implements hook_preprocess().
  */
 function chs_theme_preprocess_islandora_book_book(&$variables) {
   unset($variables['description']);
